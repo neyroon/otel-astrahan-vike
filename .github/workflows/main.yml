@@ -27,16 +27,11 @@ jobs:
         with:
           cmd: build
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-
-    steps:
       - name: Deploy to Hosting
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/client/
+          local-dir: dist/client/
           server-dir: riverfish-hotel.ru/public_html/
