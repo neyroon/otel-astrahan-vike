@@ -1,0 +1,41 @@
+name: Deploy to Hosting
+on:
+  push:
+    branches:
+      - main
+      
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+      - uses: actions/checkout@v3
+
+      - name: Set Node.js 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+          
+      - name: Run install
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install 
+          
+      - name: Run build
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: build
+          
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to Hosting
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/client
+          server-dir:  riverfish-hotel.ru/public_html
