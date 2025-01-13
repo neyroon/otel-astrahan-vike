@@ -1,2 +1,2 @@
-export { allColors } from './colors';
-export { Colors } from './types';
+export { allColors, colors } from "./colors";
+export { type Colors } from "./types";

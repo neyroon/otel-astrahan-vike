@@ -1,51 +1,39 @@
-export type HeadingTypography =
-  | 'HEADING1'
-  | 'HEADING2'
-  | 'HEADING3'
-  | 'HEADING4';
-
-export type InterfaceTypography =
-  | 'BIG_TEXT'
-  | 'NORMAL_TEXT'
-  | 'BUTTON_TEXT'
-  | 'INHERIT';
-
 export type AllTypo =
-  | HeadingTypography
-  | InterfaceTypography;
+  | "80"
+  | "64"
+  | "48"
+  | "32"
+  | "28"
+  | "20"
+  | "18"
+  | "16"
+  | "16-bold"
+  | "15"
+  | "12"
+  | "inherit";
 
-export type Devices = 'desktop' | 'mobile';
+export type Devices = "desktop" | "mobile";
 
-export type FontWeight = 300 | 400 | 500;
+export type FontWeight = 300 | 400 | "bold" | 600;
 
 export type FontSize =
   | 80
-  | 58
-  | 56
-  | 50
+  | 64
   | 48
-  | 45
-  | 36
-  | 34
   | 32
   | 28
-  | 26
-  | 24
-  | 22
   | 20
   | 18
   | 16
-  | 14
+  | "16-bold"
+  | 15
   | 13
-  | 12
-  | 11
-  | 10;
+  | 12;
 
 export interface FontParams {
-  weight: FontWeight | 'inherit';
-  size: FontSize | 'inherit';
-  lineHeight: number | 'inherit';
-  tracking: number | 'inherit';
+  weight: FontWeight | "inherit";
+  size: FontSize | "inherit";
+  lineHeight: number | "inherit";
 }
 
 export interface FontByDevice {
@@ -58,11 +46,10 @@ export type FontMap<T extends AllTypo> = {
 };
 
 export interface Typography {
-  interface: FontMap<InterfaceTypography>;
-  heading: FontMap<HeadingTypography>;
+  allTypo: FontMap<AllTypo>;
 }
 
-export type TypefaceStyles = 'LIGHT' | 'BOOK' | 'MEDIUM';
+export type TypefaceStyles = "LIGHT" | "BOOK" | "MEDIUM" | "BOLD";
 
 export type Typeface = {
   [key in TypefaceStyles]: {

@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "paths": {
       "react": ["./node_modules/preact/compat/"],
-      "react-dom": ["./node_modules/preact/compat/"]
+      "react-dom": ["./node_modules/preact/compat/"],
+      "@components/*": ["./workspaces/components-kit/*"],
+      "@foundation": ["./workspaces/foundation-kit/index"],
+      "@hooks": ["./workspaces/hooks/index"],
+      "@tokens": ["./workspaces/tokens/index"]
     }
   },
   "include": ["node_modules/vite/client.d.ts", "**/*"]

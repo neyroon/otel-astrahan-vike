@@ -1,19 +1,30 @@
-export default Page;
+import { AboutBlock } from "./blocks/about-block";
+import { AccommodationBlock } from "./blocks/accommodation-block";
+import { AdressBlock } from "./blocks/adress-block";
+import { FooterBlock } from "./blocks/footer-block";
+import { HeaderBlock } from "./blocks/header-block";
+import { PosterBlock } from "./blocks/poster-block";
+import { ReservationBlock } from "./blocks/reservation-block";
+import { ReviewsBlock } from "./blocks/reviews-block";
+import { ServiceBlock } from "./blocks/service-block";
+import { SpecialBlock } from "./blocks/special-block";
 
-import { Typography } from "../../workspaces/foundation-kit";
-import { Counter } from "./Counter";
+export default Page;
 
 function Page() {
   return (
     <>
-      <h1>Welcome</h1>
-      This page is:
-      <ul>
-        <li>Rendered to HTML.</li>
-        <li>
-          Interactive. <Typography size="big-text">from typo</Typography>
-        </li>
-      </ul>
+      <HeaderBlock />
+      <ReservationBlock />
+      <AboutBlock />
+      <AccommodationBlock />
+      <ServiceBlock />
+      <SpecialBlock />
+      <PosterBlock />
+      <AdressBlock />
+      <ReviewsBlock />
+      <FooterBlock />
+      {/* <StubBlock /> */}
     </>
   );
 }

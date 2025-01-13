@@ -1,14 +1,25 @@
-export default Page;
+import { AdressBlock } from "../index/blocks/adress-block";
+import { FooterBlock } from "../index/blocks/footer-block";
+import { HeaderBlock } from "../index/blocks/header-block";
+import { ReviewsBlock } from "../index/blocks/reviews-block";
+import { AboutCardsBlock } from "./blocks/about-cards-block";
+import { BannerStaticBlock } from "./blocks/banner-static-block";
+import { BreadcrumbsBlock } from "./blocks/breadcrumbs-block";
+import { InformationBlock } from "./blocks/information-block";
 
-import { Button } from "../../workspaces/foundation-kit";
-import "./code.css";
+export default Page;
 
 function Page() {
   return (
     <>
-      <h1>About</h1>
-      <p>Demo using Vike.</p>
-      <Button>button</Button>
+      <HeaderBlock />
+      <BreadcrumbsBlock />
+      <InformationBlock />
+      <BannerStaticBlock />
+      <AboutCardsBlock />
+      <AdressBlock />
+      <ReviewsBlock />
+      <FooterBlock />
     </>
   );
 }

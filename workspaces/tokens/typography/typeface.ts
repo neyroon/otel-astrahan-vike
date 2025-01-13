@@ -1,7 +1,7 @@
-import { Typeface } from './types';
+import { Typeface } from "./types";
 
-export const TYPEFACE_UI = 'Stolzl';
-export const TYPEFACE_FONT_FAMILY = `'${TYPEFACE_UI}', sans-serif`;
+export const TYPEFACE_UI = "Stolzl";
+export const TYPEFACE_FONT_FAMILY = `Stolzl, sans-serif`;
 
 export const typeface: Typeface = {
   LIGHT: {
@@ -11,6 +11,9 @@ export const typeface: Typeface = {
     weight: 400,
   },
   MEDIUM: {
-    weight: 500,
+    weight: "bold",
+  },
+  BOLD: {
+    weight: 600,
   },
 };
