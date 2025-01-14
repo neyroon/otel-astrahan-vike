@@ -1,6 +1,6 @@
 import { BannerStaticSmall } from "@components/banner-static-small";
 import { Section } from "@components/section";
-import bannerStaticImage from "../assets/banner-static-image.jpeg";
+import bannerStaticImage from "../assets/banner-static-image.webp";
 
 export const BannerStaticBlock = () => {
   return (

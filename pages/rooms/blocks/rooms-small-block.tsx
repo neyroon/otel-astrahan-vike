@@ -1,7 +1,7 @@
 import { CardLayout } from "@components/card-layout";
 import { CardRoomBig } from "@components/card-room-big";
 import { Section } from "@components/section";
-import cardRoomsSmall1 from "../assets/card-rooms-big-1.png";
+import cardRoomsSmall1 from "../assets/card-rooms-big-1.webp";
 
 export const RoomsSmallBlock = () => {
   return (

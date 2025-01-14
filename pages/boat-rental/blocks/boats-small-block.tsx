@@ -1,7 +1,7 @@
 import { CardLayout } from "@components/card-layout";
 import { CardRoomBig } from "@components/card-room-big";
 import { Section } from "@components/section";
-import cardBoatImage1 from "../assets/breadcrumbs-image.png";
+import cardBoatImage1 from "../assets/breadcrumbs-image.webp";
 
 export const BoatsSmallBlock = () => {
   return (

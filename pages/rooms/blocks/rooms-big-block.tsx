@@ -1,8 +1,8 @@
 import { CardLayout } from "@components/card-layout";
 import { CardRoomBig } from "@components/card-room-big";
 import { Section } from "@components/section";
-import cardRoomsBig1 from "../assets/card-rooms-big-1.png";
-import cardRoomsBig2 from "../assets/card-rooms-big-2.png";
+import cardRoomsBig1 from "../assets/card-rooms-big-1.webp";
+import cardRoomsBig2 from "../assets/card-rooms-big-2.webp";
 
 export const RoomsBigBlock = () => {
   return (

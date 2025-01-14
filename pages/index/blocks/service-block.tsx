@@ -1,10 +1,10 @@
 import { CardService } from "@components/card-service";
 import { CardServiceLayout } from "@components/card-service-layout";
 import { Section } from "@components/section";
-import cardService1 from "../assets/card-service-1.png";
-import cardService2 from "../assets/card-service-2.png";
-import cardService3 from "../assets/card-service-3.png";
-import cardService4 from "../assets/card-service-4.png";
+import cardService1 from "../assets/card-service-1.webp";
+import cardService2 from "../assets/card-service-2.webp";
+import cardService3 from "../assets/card-service-3.webp";
+import cardService4 from "../assets/card-service-4.webp";
 
 export const ServiceBlock = () => {
   return (

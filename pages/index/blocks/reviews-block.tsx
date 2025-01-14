@@ -1,15 +1,15 @@
 import { CardReview } from "@components/card-review";
 import { CardReviewLayout } from "@components/card-review-layout/card-review-layout";
 import { Section } from "@components/section";
-import cardReview1 from "../assets/card-review-1.png";
-import cardReview2 from "../assets/card-review-2.png";
-import cardReview3 from "../assets/card-review-3.png";
-import cardReview4 from "../assets/card-review-4.png";
-import cardReview5 from "../assets/card-review-5.png";
-import cardReview6 from "../assets/card-review-6.png";
-import cardReview7 from "../assets/card-review-7.png";
-import cardReview8 from "../assets/card-review-8.png";
-import cardReview9 from "../assets/card-review-9.png";
+import cardReview1 from "../assets/card-review-1.webp";
+import cardReview2 from "../assets/card-review-2.webp";
+import cardReview3 from "../assets/card-review-3.webp";
+import cardReview4 from "../assets/card-review-4.webp";
+import cardReview5 from "../assets/card-review-5.webp";
+import cardReview6 from "../assets/card-review-6.webp";
+import cardReview7 from "../assets/card-review-7.webp";
+import cardReview8 from "../assets/card-review-8.webp";
+import cardReview9 from "../assets/card-review-9.webp";
 
 export const ReviewsBlock = () => {
   return (

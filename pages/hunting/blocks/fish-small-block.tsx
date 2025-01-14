@@ -4,12 +4,12 @@ import { Section } from "@components/section";
 import { Button } from "@foundation";
 import { styled } from "@linaria/react";
 import { breakpoints } from "@tokens";
-import cardFishSmall1 from "../assets/card-fish-image-1.png";
-import cardFishSmall2 from "../assets/card-fish-image-2.png";
-import cardFishSmall3 from "../assets/card-fish-image-3.png";
-import cardFishSmall4 from "../assets/card-fish-image-4.png";
-import cardFishSmall5 from "../assets/card-fish-image-5.png";
-import cardFishSmall6 from "../assets/card-fish-image-6.png";
+import cardFishSmall1 from "../assets/card-fish-image-1.webp";
+import cardFishSmall2 from "../assets/card-fish-image-2.webp";
+import cardFishSmall3 from "../assets/card-fish-image-3.webp";
+import cardFishSmall4 from "../assets/card-fish-image-4.webp";
+import cardFishSmall5 from "../assets/card-fish-image-5.webp";
+import cardFishSmall6 from "../assets/card-fish-image-6.webp";
 
 const StyledButton = styled(Button)`
   margin-top: 20px;

@@ -4,8 +4,8 @@ import { useEffect, useState } from "preact/hooks";
 import {
   Logotype,
   PhoneIcon,
+  RutubeIcon,
   SocIcon,
-  TelegramIcon,
   ViberIcon,
   VkIcon,
 } from "../../foundation-kit/icons";
@@ -136,16 +136,16 @@ export const Header: FunctionComponent = () => {
                 <Typography size="16-bold">пн–вс | 10:00 – 20:00</Typography>
               </Contact>
               <SocialContainer>
-                <Social>
-                  <TelegramIcon />
+                <Social href="https://rutube.ru/channel/50338961/">
+                  <RutubeIcon />
                 </Social>
-                <Social>
+                <Social href="tel:+74951505402">
                   <ViberIcon />
                 </Social>
-                <Social>
+                <Social href="https://vk.com/riverfishhotel">
                   <VkIcon />
                 </Social>
-                <Social>
+                <Social href="https://www.instagram.com/riverfish.hotel?igsh=YzZvbjlsNXloMW9h">
                   <SocIcon />
                 </Social>
               </SocialContainer>

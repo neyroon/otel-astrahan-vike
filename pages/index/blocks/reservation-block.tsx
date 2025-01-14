@@ -4,7 +4,7 @@ import { Group } from "@components/group";
 import { Reservation } from "@components/reservation";
 import { Section } from "@components/section";
 import { styled } from "@linaria/react";
-import houseImg from "../assets/house.png";
+import houseImg from "../assets/house.webp";
 
 const StyledSection = styled(Section)`
   padding-top: 123px;

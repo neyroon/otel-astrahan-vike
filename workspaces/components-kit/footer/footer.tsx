@@ -1,7 +1,7 @@
 import {
   Link,
+  RutubeIcon,
   SocIcon,
-  TelegramIcon,
   Typography,
   ViberIcon,
   VkIcon,
@@ -65,10 +65,10 @@ export const Footer = () => {
           </InfoBoxMobile>
           <ContactsTop>
             <Icons>
-              <IconBox>
-                <TelegramIcon />
+              <IconBox href="https://rutube.ru/channel/50338961/">
+                <RutubeIcon />
               </IconBox>
-              <IconBox>
+              <IconBox href="tel:+74951505402">
                 <ViberIcon />
               </IconBox>
             </Icons>
@@ -161,10 +161,10 @@ export const Footer = () => {
           </Caution>
         </BottomLeftBox>
         <BottomRightBox>
-          <IconBox>
+          <IconBox href="https://vk.com/riverfishhotel">
             <VkIcon />
           </IconBox>
-          <IconBox>
+          <IconBox href="https://www.instagram.com/riverfish.hotel?igsh=YzZvbjlsNXloMW9h">
             <SocIcon />
           </IconBox>
         </BottomRightBox>

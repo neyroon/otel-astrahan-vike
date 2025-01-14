@@ -1,11 +1,11 @@
 import { PosterCard } from "@components/poster-card";
 import { PosterLayout } from "@components/poster-layout";
 import { Section } from "@components/section";
-import cardPoster1 from "../assets/card-poster-1.png";
-import cardPoster2 from "../assets/card-poster-2.png";
-import cardPoster3 from "../assets/card-poster-3.png";
-import cardPoster4 from "../assets/card-poster-4.png";
-import cardPoster5 from "../assets/card-poster-5.png";
+import cardPoster1 from "../assets/card-poster-1.webp";
+import cardPoster2 from "../assets/card-poster-2.webp";
+import cardPoster3 from "../assets/card-poster-3.webp";
+import cardPoster4 from "../assets/card-poster-4.webp";
+import cardPoster5 from "../assets/card-poster-5.webp";
 
 export const PosterBlock = () => {
   return (

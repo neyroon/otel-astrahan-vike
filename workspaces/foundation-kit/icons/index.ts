@@ -10,6 +10,7 @@ export { MinusIcon } from "./minus";
 export { PhoneIcon } from "./phone";
 export { PinIcon } from "./pin";
 export { PlusIcon } from "./plus";
+export { RutubeIcon } from "./rutube";
 export { SocIcon } from "./soc";
 export { StarIcon } from "./star";
 export { TelegramIcon } from "./telegram";

@@ -1,9 +1,9 @@
 import { CardAbout } from "@components/card-about";
 import { CardAboutLayout } from "@components/card-about-layout";
 import { Section } from "@components/section";
-import cardAbout1 from "../assets/card-about-1.png";
-import cardAbout2 from "../assets/card-about-2.png";
-import cardAbout3 from "../assets/card-about-3.jpeg";
+import cardAbout1 from "../assets/card-about-1.webp";
+import cardAbout2 from "../assets/card-about-2.webp";
+import cardAbout3 from "../assets/card-about-3.webp";
 
 export const AboutBlock = () => {
   return (

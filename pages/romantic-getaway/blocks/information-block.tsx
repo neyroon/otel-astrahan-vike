@@ -5,10 +5,10 @@ import { BannerOnlyScrollbarSlide } from "@components/banner-slide-only-scrollba
 import { InformationBanners } from "@components/Information-banners";
 import { InformationDescription } from "@components/information-description";
 import { Section } from "@components/section";
-import BannerHalfImage from "../assets/banner-half-1.jpeg";
-import BannerOnlySidebarImage1 from "../assets/banner-only-scrollbar-image-1.jpeg";
-import BannerOnlySidebarImage2 from "../assets/banner-only-scrollbar-image-2.jpeg";
-import BannerOnlySidebarImage3 from "../assets/banner-only-scrollbar-image-3.jpeg";
+import BannerHalfImage from "../assets/banner-half-1.webp";
+import BannerOnlySidebarImage1 from "../assets/banner-only-scrollbar-image-1.webp";
+import BannerOnlySidebarImage2 from "../assets/banner-only-scrollbar-image-2.webp";
+import BannerOnlySidebarImage3 from "../assets/banner-only-scrollbar-image-3.webp";
 
 export const InformationBlock = () => {
   return (
