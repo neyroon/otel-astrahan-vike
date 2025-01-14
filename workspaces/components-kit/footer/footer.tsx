@@ -121,16 +121,17 @@ export const Footer = () => {
               <Link size="15" href="/romantic-getaway">
                 Романтический отдых
               </Link>
-            </NavigationBox>
-            <NavigationBox>
               <Link size="15" href="/about">
                 О нашей базе
               </Link>
+            </NavigationBox>
+            {/* <NavigationBox>
+              
               <Link size="15">Ресторан</Link>
               <Link size="15">Баня</Link>
               <Link size="15">SPA</Link>
               <Link size="15">Развлечения</Link>
-            </NavigationBox>
+            </NavigationBox> */}
           </Navigation>
         </MiddleLeftBox>
         <MiddleRightBox>
