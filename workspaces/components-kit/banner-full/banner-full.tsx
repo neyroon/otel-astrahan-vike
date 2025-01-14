@@ -31,10 +31,10 @@ export const BannerFull: FunctionComponent = ({ children }) => {
         ))}
       </Swiper>
       <ButtonBox>
-        <ButtonNavigation onClick={onButtonPrevClick}>
+        <ButtonNavigation aria-label="Навигация влево" onClick={onButtonPrevClick}>
           <ArrowLeftIcon />
         </ButtonNavigation>
-        <ButtonNavigation onClick={onButtonNextClick}>
+        <ButtonNavigation aria-label="Навигация вправо" onClick={onButtonNextClick}>
           <ArrowRightIcon />
         </ButtonNavigation>
       </ButtonBox>

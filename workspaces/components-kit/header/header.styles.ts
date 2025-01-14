@@ -1,4 +1,4 @@
-import { Button, Link } from "@foundation";
+import { Button, Link, Typography } from "@foundation";
 import { styled } from "@linaria/react";
 import { allColors, breakpoints } from "@tokens";
 
@@ -33,10 +33,19 @@ export const NavigationContainer = styled.nav`
 
   @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
     display: block;
-    display: flex;
-    gap: 32px;
-    align-items: center;
   }
+`;
+
+export const NavigationList = styled.ul`
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+`;
+
+export const NavigationListItem = styled.li`
+  list-style: none;
 `;
 
 export const NavigationLink = styled(Link)``;
@@ -73,10 +82,14 @@ export const PhoneBox = styled.a`
   height: 40px;
   border-radius: 16px;
   border: 1px solid ${allColors.COLUMBIA_BLUE};
-
+  color: ${allColors.CONTENT_PRIMARY};
   svg {
     width: 20px;
     height: 20px;
+  }
+
+  &:hover {
+    color: ${allColors.MAIN_BUTTON};
   }
 
   @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
@@ -94,7 +107,7 @@ export const PhoneBox = styled.a`
   }
 `;
 
-export const Phone = styled(Link)`
+export const Phone = styled(Typography)`
   display: none;
 
   @media only screen and (min-width: ${breakpoints.DESKTOP_M}px) {
@@ -196,16 +209,25 @@ export const MenuMobileContainer = styled.div`
 export const MenuMobileNav = styled.nav`
   padding: 12px;
   background-color: ${allColors.WHITE};
+  border-radius: 20px;
+`;
+
+export const MenuMobileList = styled.ul`
   display: flex;
   flex-direction: column;
   border-radius: 20px;
   margin-top: 16px;
+  margin: 0;
+  padding: 0;
 `;
 
-export const MenuMobileNavElement = styled(Link)`
+export const MenuMobileListElement = styled.li`
+  list-style: none;
   padding: 16px 12px;
   border-radius: 12px;
 `;
+
+export const MenuMobileNavElement = styled(Link)``;
 
 export const MenuMobileContacts = styled.div`
   padding: 20px;

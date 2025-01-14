@@ -87,6 +87,10 @@ export const IconBox = styled.a`
   background-color: ${allColors.DARK_GRAY};
   border-radius: 12px;
 
+  &:hover {
+    background-color: ${allColors.COLUMBIA_BLUE};
+  }
+
   &:not(:last-child) {
     margin-right: 8px;
   }

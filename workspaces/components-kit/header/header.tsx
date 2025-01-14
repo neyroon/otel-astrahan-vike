@@ -21,10 +21,14 @@ import {
   MenuMobile,
   MenuMobileContacts,
   MenuMobileContainer,
+  MenuMobileList,
+  MenuMobileListElement,
   MenuMobileNav,
   MenuMobileNavElement,
   NavigationContainer,
   NavigationLink,
+  NavigationList,
+  NavigationListItem,
   Phone,
   PhoneBox,
   Social,
@@ -52,21 +56,33 @@ export const Header: FunctionComponent = () => {
       <HeaderBox>
         <HeaderContainer>
           <NavigationContainer>
-            <NavigationLink size="15" href="/rooms">
-              Номера
-            </NavigationLink>
-            <NavigationLink size="15" href="/boat-rental">
-              Аренда лодок
-            </NavigationLink>
-            <NavigationLink size="15" href="/fishing">
-              Рыбалка
-            </NavigationLink>
-            <NavigationLink size="15" href="/hunting">
-              Охота
-            </NavigationLink>
-            <NavigationLink size="15" href="/romantic-getaway">
-              Романтический отдых
-            </NavigationLink>
+            <NavigationList>
+              <NavigationListItem>
+                <NavigationLink size="15" href="/rooms">
+                  Номера
+                </NavigationLink>
+              </NavigationListItem>
+              <NavigationListItem>
+                <NavigationLink size="15" href="/boat-rental">
+                  Аренда лодок
+                </NavigationLink>
+              </NavigationListItem>
+              <NavigationListItem>
+                <NavigationLink size="15" href="/fishing">
+                  Рыбалка
+                </NavigationLink>
+              </NavigationListItem>
+              <NavigationListItem>
+                <NavigationLink size="15" href="/hunting">
+                  Охота
+                </NavigationLink>
+              </NavigationListItem>
+              <NavigationListItem>
+                <NavigationLink size="15" href="/romantic-getaway">
+                  Романтический отдых
+                </NavigationLink>
+              </NavigationListItem>
+            </NavigationList>
           </NavigationContainer>
           <LogotypeLink href="/">
             <Logotype />
@@ -74,10 +90,14 @@ export const Header: FunctionComponent = () => {
           <Contacts>
             <PhoneBox href="tel:+79208953030">
               <PhoneIcon />
-              <Phone size="15">+7 920 895 30 30</Phone>
+              <Phone size="15" color="inherit">
+                +7 920 895 30 30
+              </Phone>
             </PhoneBox>
-            <StyledButton size="s">Забронировать</StyledButton>
-            <MenuButton onClick={handleMenuButtonClick}>
+            <StyledButton href="/#reservation" size="s">
+              Забронировать
+            </StyledButton>
+            <MenuButton aria-label="Меню" onClick={handleMenuButtonClick}>
               <MenuItemContainer>
                 <MenuItem isOpen={isOpen} />
                 <MenuItem isOpen={isOpen} />
@@ -93,24 +113,38 @@ export const Header: FunctionComponent = () => {
         <MenuMobile>
           <MenuMobileContainer>
             <MenuMobileNav>
-              <MenuMobileNavElement size="15" href="/rooms">
-                Номера
-              </MenuMobileNavElement>
-              <MenuMobileNavElement size="15" href="/boat-rental">
-                Аренда лодок
-              </MenuMobileNavElement>
-              <MenuMobileNavElement size="15" href="/fishing">
-                Рыбалка
-              </MenuMobileNavElement>
-              <MenuMobileNavElement size="15" href="/hunting">
-                Охота
-              </MenuMobileNavElement>
-              <MenuMobileNavElement size="15" href="/romantic-getaway">
-                Романтический отдых
-              </MenuMobileNavElement>
-              <MenuMobileNavElement size="15" href="/about">
-                О нашей базе
-              </MenuMobileNavElement>
+              <MenuMobileList>
+                <MenuMobileListElement>
+                  <MenuMobileNavElement size="15" href="/rooms">
+                    Номера
+                  </MenuMobileNavElement>
+                </MenuMobileListElement>
+                <MenuMobileListElement>
+                  <MenuMobileNavElement size="15" href="/boat-rental">
+                    Аренда лодок
+                  </MenuMobileNavElement>
+                </MenuMobileListElement>
+                <MenuMobileListElement>
+                  <MenuMobileNavElement size="15" href="/fishing">
+                    Рыбалка
+                  </MenuMobileNavElement>
+                </MenuMobileListElement>
+                <MenuMobileListElement>
+                  <MenuMobileNavElement size="15" href="/hunting">
+                    Охота
+                  </MenuMobileNavElement>
+                </MenuMobileListElement>
+                <MenuMobileListElement>
+                  <MenuMobileNavElement size="15" href="/romantic-getaway">
+                    Романтический отдых
+                  </MenuMobileNavElement>
+                </MenuMobileListElement>
+                <MenuMobileListElement>
+                  <MenuMobileNavElement size="15" href="/about">
+                    О нашей базе
+                  </MenuMobileNavElement>
+                </MenuMobileListElement>
+              </MenuMobileList>
             </MenuMobileNav>
             <MenuMobileContacts>
               <Contact>
@@ -136,16 +170,25 @@ export const Header: FunctionComponent = () => {
                 <Typography size="16-bold">пн–вс | 10:00 – 20:00</Typography>
               </Contact>
               <SocialContainer>
-                <Social href="https://rutube.ru/channel/50338961/">
+                <Social
+                  href="https://rutube.ru/channel/50338961/"
+                  aria-label="Ссылка на rutube"
+                >
                   <RutubeIcon />
                 </Social>
-                <Social href="tel:+74951505402">
+                <Social href="tel:+74951505402" aria-label="Телефон">
                   <ViberIcon />
                 </Social>
-                <Social href="https://vk.com/riverfishhotel">
+                <Social
+                  href="https://vk.com/riverfishhotel"
+                  aria-label="Ссылка на vk"
+                >
                   <VkIcon />
                 </Social>
-                <Social href="https://www.instagram.com/riverfish.hotel?igsh=YzZvbjlsNXloMW9h">
+                <Social
+                  href="https://www.instagram.com/riverfish.hotel?igsh=YzZvbjlsNXloMW9h"
+                  aria-label="Ссылка на instagram"
+                >
                   <SocIcon />
                 </Social>
               </SocialContainer>

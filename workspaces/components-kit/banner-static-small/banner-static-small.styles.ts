@@ -29,6 +29,7 @@ export const StyledImage = styled(Image)`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 28px;
   position: absolute;
   left: 50%;

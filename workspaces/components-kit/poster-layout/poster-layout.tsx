@@ -37,10 +37,16 @@ export const PosterLayout: FunctionalComponent = ({ children }) => {
           <SwiperSlide>{el}</SwiperSlide>
         ))}
       </Swiper>
-      <ButtonNavigationLeft onClick={onButtonPrevClick}>
+      <ButtonNavigationLeft
+        aria-label="Навигация влево"
+        onClick={onButtonPrevClick}
+      >
         <ArrowLeftIcon />
       </ButtonNavigationLeft>
-      <ButtonNavigationRight onClick={onButtonNextClick}>
+      <ButtonNavigationRight
+        aria-label="Навигация вправо"
+        onClick={onButtonNextClick}
+      >
         <ArrowRightIcon />
       </ButtonNavigationRight>
     </PosterLayoutBox>

@@ -1,23 +1,42 @@
 import { FunctionComponent } from "preact";
 import { Typography } from "../typography";
-import { ButtonBox } from "./button.styles";
+import { ButtonBox, LinkBox } from "./button.styles";
 import { ButtonSize } from "./types";
 
 interface ButtonProps {
   className?: string;
   size?: ButtonSize;
+  elementAs?: "button" | "link";
   design?: "primary" | "secondary";
+  href?: string;
 }
 
 export const Button: FunctionComponent<ButtonProps> = ({
   className,
   children,
   size = "m",
+  elementAs = "link",
   design = "primary",
+  href = "/#reservation",
   ...rest
 }) => {
+  if (elementAs === "link")
+    return (
+      <LinkBox
+        className={className}
+        $size={size}
+        $design={design}
+        href={href}
+        {...rest}
+      >
+        <Typography size="15" color="inherit">
+          {children}
+        </Typography>
+      </LinkBox>
+    );
+
   return (
-    <ButtonBox className={className} size={size} design={design} {...rest}>
+    <ButtonBox className={className} $size={size} $design={design} {...rest}>
       <Typography size="15" color="inherit">
         {children}
       </Typography>

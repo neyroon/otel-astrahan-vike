@@ -29,6 +29,7 @@ export const Section: FunctionComponent<SectionProps> = ({
   withPadding = true,
   doublePaddingTop = false,
   className,
+  ...rest
 }) => {
   return (
     <SectionBox
@@ -38,6 +39,7 @@ export const Section: FunctionComponent<SectionProps> = ({
       withPadding={withPadding}
       doublePaddingTop={doublePaddingTop}
       className={className}
+      {...rest}
     >
       {title && (
         <>

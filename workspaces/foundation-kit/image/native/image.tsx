@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
-import { NativeImageProps, LinkToImage } from "./types";
-import { Image, Source, Picture } from "./image.styles";
+import { Image, Picture, Source } from "./image.styles";
+import { LinkToImage, NativeImageProps } from "./types";
 
 export const NativeImage: FunctionComponent<NativeImageProps> = ({
   className,
@@ -27,7 +27,12 @@ export const NativeImage: FunctionComponent<NativeImageProps> = ({
     return (
       <Picture className={className}>
         <Source srcSet={sourceSet.join(",")} />
-        <Image loading="lazy" src={sources[0] || sources[1]} {...attr} />
+        <Image
+          loading="lazy"
+          src={sources[0] || sources[1]}
+          alt="Фон"
+          {...attr}
+        />
       </Picture>
     );
   }

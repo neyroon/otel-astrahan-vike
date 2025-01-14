@@ -34,10 +34,18 @@ export const CardReviewLayout: FunctionalComponent = ({ children }) => {
           <SwiperSlide>{el}</SwiperSlide>
         ))}
       </Swiper>
-      <ButtonNavigationLeft withBorder onClick={onButtonPrevClick}>
+      <ButtonNavigationLeft
+        aria-label="Навигация влево"
+        withBorder
+        onClick={onButtonPrevClick}
+      >
         <ArrowLeftIcon />
       </ButtonNavigationLeft>
-      <ButtonNavigationRight withBorder onClick={onButtonNextClick}>
+      <ButtonNavigationRight
+        aria-label="Навигация вправо"
+        withBorder
+        onClick={onButtonNextClick}
+      >
         <ArrowRightIcon />
       </ButtonNavigationRight>
     </CardReviewLayoutBox>

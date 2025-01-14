@@ -65,10 +65,13 @@ export const Footer = () => {
           </InfoBoxMobile>
           <ContactsTop>
             <Icons>
-              <IconBox href="https://rutube.ru/channel/50338961/">
+              <IconBox
+                href="https://rutube.ru/channel/50338961/"
+                aria-label="Ссылка на rutube"
+              >
                 <RutubeIcon />
               </IconBox>
-              <IconBox href="tel:+74951505402">
+              <IconBox href="tel:+74951505402" aria-label="Телефон">
                 <ViberIcon />
               </IconBox>
             </Icons>
@@ -161,10 +164,16 @@ export const Footer = () => {
           </Caution>
         </BottomLeftBox>
         <BottomRightBox>
-          <IconBox href="https://vk.com/riverfishhotel">
+          <IconBox
+            href="https://vk.com/riverfishhotel"
+            aria-label="Ссылка на vk"
+          >
             <VkIcon />
           </IconBox>
-          <IconBox href="https://www.instagram.com/riverfish.hotel?igsh=YzZvbjlsNXloMW9h">
+          <IconBox
+            href="https://www.instagram.com/riverfish.hotel?igsh=YzZvbjlsNXloMW9h"
+            aria-label="Ссылка на instagram"
+          >
             <SocIcon />
           </IconBox>
         </BottomRightBox>

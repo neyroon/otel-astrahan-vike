@@ -15,7 +15,7 @@ export const BannerSlide: FunctionComponent<BannerSlideProps> = ({
 }) => {
   return (
     <BannerSlideBox>
-      <StyledImage sources={[imageLink1x, imageLink2x]} />
+      <StyledImage sources={[imageLink1x, imageLink2x]} loading="eager" />
       <TopText size="20" color="white">
         Бары, рестораны, бани
       </TopText>
