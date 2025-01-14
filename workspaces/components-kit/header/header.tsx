@@ -84,7 +84,7 @@ export const Header: FunctionComponent = () => {
               </NavigationListItem>
             </NavigationList>
           </NavigationContainer>
-          <LogotypeLink href="/">
+          <LogotypeLink href="/" aria-label="Логотип">
             <Logotype />
           </LogotypeLink>
           <Contacts>
