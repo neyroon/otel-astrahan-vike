@@ -20,6 +20,7 @@ export const BannerSpecial: FunctionComponent = ({ children }) => {
         spaceBetween={16}
         loop
         pagination={{ type: "bullets" }}
+        speed={700}
         modules={[Pagination]}
         breakpoints={{ 1024: { pagination: { type: "fraction" } } }}
         ref={sliderRef}
@@ -29,10 +30,16 @@ export const BannerSpecial: FunctionComponent = ({ children }) => {
         ))}
       </Swiper>
       <ButtonBox>
-        <ButtonNavigation aria-label="Навигация влево" onClick={onButtonPrevClick}>
+        <ButtonNavigation
+          aria-label="Навигация влево"
+          onClick={onButtonPrevClick}
+        >
           <ArrowLeftIcon />
         </ButtonNavigation>
-        <ButtonNavigation aria-label="Навигация вправо" onClick={onButtonNextClick}>
+        <ButtonNavigation
+          aria-label="Навигация вправо"
+          onClick={onButtonNextClick}
+        >
           <ArrowRightIcon />
         </ButtonNavigation>
       </ButtonBox>

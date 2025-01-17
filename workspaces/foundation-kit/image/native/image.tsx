@@ -1,4 +1,5 @@
 import { FunctionComponent } from "react";
+import Parallax from "simple-parallax-js";
 import { Image, Picture, Source } from "./image.styles";
 import { LinkToImage, NativeImageProps } from "./types";
 
@@ -6,16 +7,26 @@ export const NativeImage: FunctionComponent<NativeImageProps> = ({
   className,
   sources,
   src,
-
   ...attr
 }) => {
   if (src) {
-    return <Image loading="lazy" className={className} src={src} {...attr} />;
+    return (
+      <Parallax scale={1.5}>
+        <Image loading="lazy" className={className} src={src} {...attr} />
+      </Parallax>
+    );
   }
 
   if (sources && sources.length <= 1 && sources.length > 0) {
     return (
-      <Image loading="lazy" className={className} src={sources[0]} {...attr} />
+      <Parallax scale={1.5}>
+        <Image
+          loading="lazy"
+          className={className}
+          src={sources[0]}
+          {...attr}
+        />
+      </Parallax>
     );
   }
 

@@ -11,7 +11,7 @@ export { PhoneIcon } from "./phone";
 export { PinIcon } from "./pin";
 export { PlusIcon } from "./plus";
 export { RutubeIcon } from "./rutube";
-export { SocIcon } from "./soc";
+export { InstagramIcon } from "./soc";
 export { StarIcon } from "./star";
 export { TelegramIcon } from "./telegram";
 export { TimeIcon } from "./time";

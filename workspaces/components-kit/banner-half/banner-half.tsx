@@ -16,7 +16,7 @@ export const BannerHalf: FunctionComponent<BannerProps> = ({ children }) => {
 
   return (
     <BannerBox>
-      <Swiper spaceBetween={16} loop ref={sliderRef}>
+      <Swiper spaceBetween={16} speed={700} loop ref={sliderRef}>
         {elements.map((el) => (
           <SwiperSlide>{el}</SwiperSlide>
         ))}

@@ -24,7 +24,7 @@ export const BannerStaticSmall: FunctionComponent<BannerStaticProps> = ({
 }) => {
   return (
     <BannerStaticBox>
-      <StyledImage sources={[imageLink1x, imageLink2x]} />
+      <StyledImage sources={[imageLink1x]} />
       <Gradient />
       <Content>
         <TextBox>

@@ -60,9 +60,13 @@ export const DatePickerBox = styled.div`
   .react-datepicker-popper {
     width: 100%;
     transform: none !important;
-    top: 72px !important;
+    top: 55px !important;
     z-index: 1;
     line-height: 0;
+
+    @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
+      top: 72px !important;
+    }
   }
   .react-datepicker-popper .react-datepicker__triangle {
     display: none;
@@ -938,8 +942,9 @@ export const DatePickerInput = styled.div`
 
   background-color: ${({ isOpen }) => (isOpen ? "#fff" : " #f6f6f6")};
   border-radius: 20px;
-  padding: 24px;
+  padding: 16px 24px;
   display: flex;
+  align-items: center;
   cursor: pointer;
   justify-content: space-between;
   border: ${({ isOpen }) =>
@@ -949,8 +954,22 @@ export const DatePickerInput = styled.div`
   border-bottom-left-radius: ${({ isOpen }) => (isOpen ? "0" : "20px")};
   border-bottom-right-radius: ${({ isOpen }) => (isOpen ? "0" : "20px")};
 
-  svg path {
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  & > svg path {
     fill: ${({ isOpen }) => (isOpen ? "#292929" : "#b8b8b8")};
+  }
+
+  @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
+    padding: 24px;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
   }
 `;
 

@@ -10,7 +10,6 @@ import {
   MainText,
   TextBox,
 } from "./breadcrumbs.styles";
-
 export const Breadcrumbs: FunctionComponent<{
   imageLink1x: string;
   imageLink2x: string;
@@ -18,7 +17,7 @@ export const Breadcrumbs: FunctionComponent<{
 }> = ({ imageLink1x, imageLink2x, currentPageText }) => {
   return (
     <BreadcrumbsBox>
-      <Background sources={[imageLink1x, imageLink2x]} />
+      <Background sources={[imageLink1x]} />
       <GradientBox />
       <TextBox>
         <Breadcrumb>

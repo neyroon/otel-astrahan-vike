@@ -18,6 +18,7 @@ export const ReviewsBlock = () => {
       description="За долгое время работы накопилось большое количество отзывов
 о River & Fish. Мы гордимся высокими оценками наших клиентов, потому что искренне заботимся о каждом клиенте."
       align="center"
+      withBorderRadiusTop
     >
       <CardReviewLayout>
         <CardReview

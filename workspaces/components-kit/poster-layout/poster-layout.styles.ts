@@ -39,7 +39,7 @@ export const PosterLayoutBox = styled.div`
     }
 
     @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
-      padding: 0 10%;
+      padding: 0 7%;
     }
   }
 `;

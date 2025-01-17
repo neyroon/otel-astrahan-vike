@@ -16,6 +16,8 @@ interface SectionProps {
   withBorderBottom?: boolean;
   withPadding?: boolean;
   doublePaddingTop?: boolean;
+  withBorderRadiusTop?: boolean;
+  withBorderRadiusBottom?: boolean;
   className?: string;
 }
 
@@ -28,6 +30,8 @@ export const Section: FunctionComponent<SectionProps> = ({
   withBorderBottom,
   withPadding = true,
   doublePaddingTop = false,
+  withBorderRadiusTop,
+  withBorderRadiusBottom,
   className,
   ...rest
 }) => {
@@ -38,6 +42,8 @@ export const Section: FunctionComponent<SectionProps> = ({
       withBorderBottom={withBorderBottom}
       withPadding={withPadding}
       doublePaddingTop={doublePaddingTop}
+      withBorderRadiusTop={withBorderRadiusTop}
+      withBorderRadiusBottom={withBorderRadiusBottom}
       className={className}
       {...rest}
     >

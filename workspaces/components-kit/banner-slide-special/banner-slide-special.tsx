@@ -18,13 +18,11 @@ export const BannerSlideSpecial: FunctionComponent<BannerSlideProps> = ({
       <StyledImage sources={[imageLink1x, imageLink2x]} />
       <BottomText>
         <Typography size="48" color="white">
-          Уединение с природой в домиках скандинавского типа
+          Скидка 15% при проживании от 2х ночей
         </Typography>
         <Description size="18" color="white">
-          Команда River-Fish – это люди, которые проехали в путешествиях по
-          России несколько десятков тысяч километров, побывали во всех
-          знаменитых заповедниках, водоемах и заказниках в поиске открытий,
-          совместных впечатлений от путешествия
+          Проведите больше времени на природе и с близкими вдали от суеты
+          города.
         </Description>
         <StyledButton size="m">Забронировать номер</StyledButton>
       </BottomText>

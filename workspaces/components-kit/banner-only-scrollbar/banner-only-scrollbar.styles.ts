@@ -26,7 +26,7 @@ export const BannerBox = styled.div`
       bottom: 0;
       left: 0;
       right: 0;
-      width: calc(100% - 15px);
+      width: 77%;
 
       & .swiper-scrollbar-drag {
         background-color: ${allColors.MAIN_BUTTON};

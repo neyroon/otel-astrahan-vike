@@ -29,6 +29,8 @@ export const CardServiceText = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  gap: 8px;
+  max-width: 470px;
   height: 100%;
 `;
 

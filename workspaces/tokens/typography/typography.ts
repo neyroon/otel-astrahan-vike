@@ -78,24 +78,24 @@ export const allTypography: FontMap<AllTypo> = {
     desktop: {
       weight: typeface.BOOK.weight,
       size: 18,
-      lineHeight: 120,
+      lineHeight: 160,
     },
     mobile: {
       weight: typeface.BOOK.weight,
       size: 13,
-      lineHeight: 150,
+      lineHeight: 160,
     },
   },
   "16": {
     desktop: {
       weight: typeface.BOOK.weight,
       size: 16,
-      lineHeight: 120,
+      lineHeight: 150,
     },
     mobile: {
       weight: typeface.BOOK.weight,
       size: 13,
-      lineHeight: 150,
+      lineHeight: 160,
     },
   },
   "16-bold": {
@@ -114,24 +114,24 @@ export const allTypography: FontMap<AllTypo> = {
     desktop: {
       weight: typeface.BOOK.weight,
       size: 15,
-      lineHeight: 120,
+      lineHeight: 133,
     },
     mobile: {
       weight: typeface.BOOK.weight,
       size: 15,
-      lineHeight: 120,
+      lineHeight: 133,
     },
   },
   "12": {
     desktop: {
       weight: typeface.BOOK.weight,
       size: 12,
-      lineHeight: 120,
+      lineHeight: 150,
     },
     mobile: {
       weight: typeface.BOOK.weight,
       size: 12,
-      lineHeight: 120,
+      lineHeight: 150,
     },
   },
   inherit: {

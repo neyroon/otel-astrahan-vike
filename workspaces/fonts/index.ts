@@ -7,14 +7,14 @@ export const cssFonts = `
     font-family: ${TYPEFACE_UI};
     font-display: swap;
     font-weight: 400;
-    src: url(${StolzRegular}) format('woff');
+    src: url(${StolzRegular}) format(woff);
   }
 
   @font-face {
     font-family: ${TYPEFACE_UI};
     font-display: swap;
     font-weight: 500;
-    src: url(${StolzMedium}) format('woff');
+    src: url(${StolzMedium}) format(woff);
   }
 
 `;

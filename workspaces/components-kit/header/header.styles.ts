@@ -31,7 +31,7 @@ export const HeaderContainer = styled.div`
 export const NavigationContainer = styled.nav`
   display: none;
 
-  @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
+  @media only screen and (min-width: 1360px) {
     display: block;
   }
 `;
@@ -66,10 +66,13 @@ export const LogotypeLink = styled.a`
 export const Contacts = styled.div`
   display: flex;
   align-items: center;
+
   gap: 8px;
 
   @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
     gap: 32px;
+    width: 546px;
+    justify-content: end;
   }
 `;
 
@@ -110,14 +113,14 @@ export const PhoneBox = styled.a`
 export const Phone = styled(Typography)`
   display: none;
 
-  @media only screen and (min-width: ${breakpoints.DESKTOP_M}px) {
+  @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
     display: block;
   }
 `;
 
 export const StyledButton = styled(Button)`
   display: none;
-  @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
+  @media only screen and (min-width: 1360px) {
     display: block;
   }
 `;
@@ -133,7 +136,7 @@ export const MenuButton = styled.button`
   background-color: ${allColors.MAIN_BUTTON};
   border: none;
 
-  @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
+  @media only screen and (min-width: 1360px) {
     display: none;
   }
 `;
@@ -204,6 +207,11 @@ export const MenuMobileContainer = styled.div`
   margin-top: 72px;
   height: calc(100% - 72px);
   padding: 16px 15px 22px;
+
+  @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
+    margin-top: 91px;
+    height: calc(100% - 91px);
+  }
 `;
 
 export const MenuMobileNav = styled.nav`

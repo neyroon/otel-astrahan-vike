@@ -26,6 +26,7 @@ export const CardReviewLayout: FunctionalComponent = ({ children }) => {
         autoHeight
         breakpoints={{ 1024: { slidesPerView: 3 } }}
         spaceBetween={26}
+        span={700}
         scrollbar
         initialSlide={0}
         ref={sliderRef}

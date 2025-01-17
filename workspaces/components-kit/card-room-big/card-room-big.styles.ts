@@ -46,7 +46,7 @@ export const InfoLayout = styled.div`
 `;
 
 export const InfoBox = styled.div`
-  padding: 12px 8px;
+  padding: 8px 12px;
   border-radius: 8px;
   background-color: #edeff2;
 `;

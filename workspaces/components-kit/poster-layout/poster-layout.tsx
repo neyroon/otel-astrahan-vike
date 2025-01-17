@@ -23,11 +23,12 @@ export const PosterLayout: FunctionalComponent = ({ children }) => {
       <Swiper
         slidesPerView={1.2}
         breakpoints={{
-          1280: { slidesPerView: 3.4, initialSlide: 1 },
+          1280: { slidesPerView: 3.2, initialSlide: 1 },
           1024: { slidesPerView: 2.4, initialSlide: 1 },
         }}
         scrollbar
         modules={[Scrollbar]}
+        speed={700}
         centeredSlides={false}
         spaceBetween={26}
         initialSlide={0}

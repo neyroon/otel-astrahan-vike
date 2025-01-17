@@ -9,7 +9,7 @@ export const YmapsBox = styled.div`
   gap: 16px;
   iframe {
     border-radius: 28px;
-    height: 684px;
+    height: 279px;
   }
 
   @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {

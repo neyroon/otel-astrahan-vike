@@ -10,8 +10,9 @@ export const AboutBlock = () => {
     <Section
       align="center"
       title="О нас в цифрах"
-      description="Мы преследуем ключевую идею эко-отеля — «природа» и «умиротворение», окутывая их красивым интерьером и дружелюбным сервисом"
+      description="Мы преследуем ключевую идею эко-отеля — «природа» и&nbsp;«умиротворение», окутывая их красивым интерьером и&nbsp;дружелюбным сервисом"
       withBorderBottom
+      withBorderRadius
     >
       <CardAboutLayout>
         <CardAbout

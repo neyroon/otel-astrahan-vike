@@ -23,6 +23,7 @@ export const Banner: FunctionComponent<BannerProps> = ({ children }) => {
         loop
         pagination
         modules={[Pagination]}
+        speed={700}
         ref={sliderRef}
       >
         {elements.map((el) => (

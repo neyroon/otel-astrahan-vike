@@ -3,7 +3,7 @@ import { allColors, breakpoints } from "@tokens";
 
 export const BannerBox = styled.div`
   position: relative;
-  border-radius: 28px;
+  border-radius: 16px;
   width: calc(100% + 30px);
   margin-left: -15px;
   margin-right: -15px;
@@ -13,10 +13,15 @@ export const BannerBox = styled.div`
   @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
     margin: 0;
     width: 100%;
+    border-radius: 28px;
   }
 
   & .swiper {
-    border-radius: 28px;
+    border-radius: 16px;
+
+    @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
+      border-radius: 28px;
+    }
 
     & .swiper-pagination {
       display: flex;

@@ -9,8 +9,12 @@ export const BannerSlideBox = styled.div`
   justify-content: space-between;
   height: 660px;
   position: relative;
-  border-radius: 28px;
+  border-radius: 16px;
   z-index: 2;
+
+  @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
+    border-radius: 28px;
+  }
 `;
 
 export const StyledImage = styled(Image)`
@@ -18,7 +22,11 @@ export const StyledImage = styled(Image)`
   width: 100%;
 
   & img {
-    border-radius: 28px;
+    border-radius: 16px;
+
+    @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
+      border-radius: 28px;
+    }
   }
 `;
 
@@ -43,7 +51,7 @@ export const BottomText = styled.div`
   flex-direction: column;
   gap: 16px;
   z-index: 1;
-  max-width: 70%;
+  max-width: 68%;
   position: absolute;
   bottom: 172px;
   left: 15px;

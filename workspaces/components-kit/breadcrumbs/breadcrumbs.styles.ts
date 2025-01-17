@@ -6,6 +6,9 @@ export const BreadcrumbsBox = styled.div`
   width: 100%;
   position: relative;
   height: 158px;
+  overflow: hidden;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
   margin-top: 28px;
   background-color: ${allColors.DARK_GRAY};
 
@@ -52,16 +55,17 @@ export const MainText = styled(Typography)`
 `;
 
 export const Background = styled(Image)`
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-bottom-left-radius: 28px;
-  border-bottom-right-radius: 28px;
   img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
     border-bottom-left-radius: 28px;
     border-bottom-right-radius: 28px;
+    object-fit: cover;
   }
 `;
 

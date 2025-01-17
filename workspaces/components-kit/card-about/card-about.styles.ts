@@ -23,7 +23,7 @@ export const TextBox = styled.div`
   flex-direction: column;
   gap: 8px;
   align-items: start;
-  width: 169px;
+  width: 50%;
 
   @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
     flex-direction: row;
@@ -34,12 +34,22 @@ export const TextBox = styled.div`
 `;
 
 export const StyledImage = styled(Image)`
-  width: 100%;
+  width: 50%;
   height: 100%;
   max-width: 400px;
   max-height: 287px;
   img {
     border-radius: 28px;
+  }
+
+  @media only screen and (min-width: ${breakpoints.MOBILE_S}px) {
+    width: 160px;
+    height: 140px;
+  }
+
+  @media only screen and (min-width: 400px) {
+    width: 50%;
+    height: 100%;
   }
 
   @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {

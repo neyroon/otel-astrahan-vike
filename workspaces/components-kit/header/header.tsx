@@ -2,11 +2,10 @@ import { Link, Typography } from "@foundation";
 import { FunctionComponent } from "preact";
 import { useEffect, useState } from "preact/hooks";
 import {
+  InstagramIcon,
   Logotype,
   PhoneIcon,
   RutubeIcon,
-  SocIcon,
-  ViberIcon,
   VkIcon,
 } from "../../foundation-kit/icons";
 import {
@@ -88,7 +87,7 @@ export const Header: FunctionComponent = () => {
             <Logotype />
           </LogotypeLink>
           <Contacts>
-            <PhoneBox href="tel:+79208953030">
+            <PhoneBox href="tel:+79208953030" aria-label="Позвонить">
               <PhoneIcon />
               <Phone size="15" color="inherit">
                 +7 920 895 30 30
@@ -171,15 +170,6 @@ export const Header: FunctionComponent = () => {
               </Contact>
               <SocialContainer>
                 <Social
-                  href="https://rutube.ru/channel/50338961/"
-                  aria-label="Ссылка на rutube"
-                >
-                  <RutubeIcon />
-                </Social>
-                <Social href="tel:+74951505402" aria-label="Телефон">
-                  <ViberIcon />
-                </Social>
-                <Social
                   href="https://vk.com/riverfishhotel"
                   aria-label="Ссылка на vk"
                 >
@@ -189,7 +179,16 @@ export const Header: FunctionComponent = () => {
                   href="https://www.instagram.com/riverfish.hotel?igsh=YzZvbjlsNXloMW9h"
                   aria-label="Ссылка на instagram"
                 >
-                  <SocIcon />
+                  <InstagramIcon />
+                </Social>
+                <Social
+                  href="https://rutube.ru/channel/50338961/"
+                  aria-label="Ссылка на rutube"
+                >
+                  <RutubeIcon />
+                </Social>
+                <Social href="tel:+74951505402" aria-label="Телефон">
+                  <PhoneIcon />
                 </Social>
               </SocialContainer>
             </MenuMobileContacts>

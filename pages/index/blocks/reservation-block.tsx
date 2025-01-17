@@ -4,10 +4,15 @@ import { Group } from "@components/group";
 import { Reservation } from "@components/reservation";
 import { Section } from "@components/section";
 import { styled } from "@linaria/react";
+import { breakpoints } from "@tokens";
 import houseImg from "../assets/house.webp";
 
 const StyledSection = styled(Section)`
-  padding-top: 123px;
+  padding-top: 20px;
+
+  @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
+    padding-top: 123px;
+  }
 `;
 
 export const ReservationBlock = () => {

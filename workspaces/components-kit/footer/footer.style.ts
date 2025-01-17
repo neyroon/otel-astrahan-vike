@@ -78,6 +78,29 @@ export const ButtonBox = styled.div`
     width: auto;
   }
 `;
+
+export const IconBoxTop = styled.a`
+  width: 100%;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: ${allColors.DARK_GRAY};
+  border-radius: 12px;
+
+  &:hover {
+    background-color: ${allColors.COLUMBIA_BLUE};
+  }
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
+    width: 44px;
+  }
+`;
+
 export const IconBox = styled.a`
   width: calc(50% - 4px);
   height: 44px;
@@ -228,6 +251,7 @@ export const EmailBox = styled.div`
 
   @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
     align-items: end;
+    gap: 4px;
   }
 `;
 export const WorkScheduleBox = styled.div`
@@ -238,6 +262,7 @@ export const WorkScheduleBox = styled.div`
 
   @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
     align-items: end;
+    gap: 4px;
   }
 `;
 export const BottomBox = styled.div`
@@ -279,8 +304,13 @@ export const Copyright = styled.div`
 export const Caution = styled(Typography)`
   max-width: 415px;
   text-align: center;
+
   @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
-    max-width: 642px;
+    max-width: 450px;
     text-align: start;
+  }
+
+  @media only screen and (min-width: ${breakpoints.DESKTOP_M}px) {
+    max-width: 642px;
   }
 `;

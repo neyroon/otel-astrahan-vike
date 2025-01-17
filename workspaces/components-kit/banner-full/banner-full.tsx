@@ -23,6 +23,8 @@ export const BannerFull: FunctionComponent = ({ children }) => {
         pagination={{ type: "fraction" }}
         breakpoints={{ 1024: { slidesPerView: 1 } }}
         scrollbar
+        speed={700}
+        loop
         modules={[Pagination, Scrollbar]}
         ref={sliderRef}
       >
@@ -31,10 +33,16 @@ export const BannerFull: FunctionComponent = ({ children }) => {
         ))}
       </Swiper>
       <ButtonBox>
-        <ButtonNavigation aria-label="Навигация влево" onClick={onButtonPrevClick}>
+        <ButtonNavigation
+          aria-label="Навигация влево"
+          onClick={onButtonPrevClick}
+        >
           <ArrowLeftIcon />
         </ButtonNavigation>
-        <ButtonNavigation aria-label="Навигация вправо" onClick={onButtonNextClick}>
+        <ButtonNavigation
+          aria-label="Навигация вправо"
+          onClick={onButtonNextClick}
+        >
           <ArrowRightIcon />
         </ButtonNavigation>
       </ButtonBox>

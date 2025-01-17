@@ -119,6 +119,7 @@ export default () => {
           open={isDatePickerFirstOpen}
           renderCustomHeader={renderCustomHeader}
           onClickOutside={onDatePickerFirstClose}
+          enableTabLoop={false}
           onCalendarClose={onDatePickerFirstClose}
           onChange={(date) => {
             setIsDatePickerSecondOpen(true);
@@ -146,6 +147,7 @@ export default () => {
             selected={startDate}
             selectsEnd
             selectsRange
+            enableTabLoop={false}
             onChange={(dates) => {
               setEndDate(dates[1]);
               setIsDatePickerSecondOpen(false);

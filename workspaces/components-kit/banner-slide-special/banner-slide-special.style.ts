@@ -51,7 +51,7 @@ export const StyledButton = styled(Button)`
   display: none;
 
   @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
-    margin-top: 28px;
+    margin-top: 10px;
     width: 600px;
     display: block;
   }
