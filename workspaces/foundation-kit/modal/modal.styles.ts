@@ -24,9 +24,6 @@ export const Content = styled.div`
 
   border-top-right-radius: 16px;
   border-top-left-radius: 16px;
-  transition: transform 0.4s ease, opacity 0.4s ease;
-
-  height: fit-content;
 
   @media screen and (min-width: ${breakpoints.DESKTOP_S}px) {
     left: 50%;
