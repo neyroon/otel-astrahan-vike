@@ -1,9 +1,8 @@
-import { ArrowsIcon, Typography } from "@foundation";
+import { ArrowsIcon, Modal, Typography } from "@foundation";
 import { useIsMobile } from "@hooks";
 import { FunctionalComponent } from "preact";
 import { useEffect, useRef, useState } from "preact/hooks";
 import { CardHouse } from "./card-house";
-import { Modal } from "./modal";
 import {
   Background,
   GuideBox,
