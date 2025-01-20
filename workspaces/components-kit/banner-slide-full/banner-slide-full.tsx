@@ -7,6 +7,7 @@ import {
   FeatureIconBox,
   FeaturesBox,
   FeatureTextBox,
+  GradientBox,
   StyledButton,
   StyledImage,
   StyledTypography,
@@ -24,6 +25,7 @@ export const BannerSlideFull: FunctionComponent<BannerSlideFullProps> = ({
   return (
     <BannerSlideBox>
       <StyledImage sources={[imageLink1x, imageLink2x]} />
+      <GradientBox />
       <CardBox>
         <Typography size="28">Название номера, можно в 2 строках</Typography>
         <StyledTypography size="16" color="gray" opacity={60}>

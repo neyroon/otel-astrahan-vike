@@ -14,7 +14,9 @@ export const ButtonBox = styled.button`
   color: ${({ $design }) =>
     $design === "primary" ? `${allColors.WHITE}` : `${allColors.MAIN_BUTTON}`};
   cursor: pointer;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 16px;
   font-weight: 600;
   line-height: normal;
@@ -51,6 +53,9 @@ export const ButtonBox = styled.button`
 `;
 
 export const LinkBox = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: fit-content;
   appearance: none;
   background: ${({ $design }) =>
@@ -63,7 +68,6 @@ export const LinkBox = styled.a`
   color: ${({ $design }) =>
     $design === "primary" ? `${allColors.WHITE}` : `${allColors.MAIN_BUTTON}`};
   cursor: pointer;
-  display: inline-block;
   font-size: 16px;
   font-weight: 600;
   line-height: normal;

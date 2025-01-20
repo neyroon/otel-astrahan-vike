@@ -36,7 +36,7 @@ export const TextBox = styled.div`
     gap: 16px;
     width: auto;
     left: 28px;
-    bottom: 15px;
+    bottom: 54px;
   }
 `;
 

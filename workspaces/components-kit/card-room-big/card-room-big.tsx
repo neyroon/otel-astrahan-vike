@@ -1,5 +1,7 @@
-import { Button, Typography } from "@foundation";
-import { FunctionComponent } from "react";
+import { CardModal } from "@components/card-modal";
+import { Button, Modal, Typography } from "@foundation";
+import { FunctionComponent } from "preact";
+import { useState } from "preact/hooks";
 import {
   Buttons,
   CardRoomBigBox,
@@ -22,6 +24,13 @@ interface CardRoomBigProps {
   sofaBed?: string;
   button1text?: string;
   withButtons?: boolean;
+
+  modalImageLink1: string;
+  modalImageLink2: string;
+  modalImageLink3: string;
+  modalImageLink4: string;
+  modalImageLink5?: string;
+  modalImageLink6?: string;
 }
 
 export const CardRoomBig: FunctionComponent<CardRoomBigProps> = ({
@@ -37,7 +46,18 @@ export const CardRoomBig: FunctionComponent<CardRoomBigProps> = ({
   sofaBed,
   button1text = "Выбрать дату",
   withButtons = true,
+  children,
+  ...props
 }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleModalOpen = () => {
+    setIsModalOpen(true);
+  };
+  const handleModalClose = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <CardRoomBigBox>
       <StyledImage sources={[imageLink1x, imageLink2x]} />
@@ -78,12 +98,31 @@ export const CardRoomBig: FunctionComponent<CardRoomBigProps> = ({
         {withButtons && (
           <Buttons>
             <Button size="s">{button1text}</Button>
-            <Button size="s" design="secondary">
+            <Button
+              size="s"
+              design="secondary"
+              elementAs="button"
+              onClick={handleModalOpen}
+            >
               Подробнее
             </Button>
           </Buttons>
         )}
       </Content>
+      {isModalOpen && (
+        <Modal isOpen={isModalOpen} onClose={handleModalClose}>
+          <CardModal
+            imageLink1={props.modalImageLink1}
+            imageLink2={props.modalImageLink2}
+            imageLink3={props.modalImageLink3}
+            imageLink4={props.modalImageLink4}
+            imageLink5={props.modalImageLink5}
+            imageLink6={props.modalImageLink6}
+          >
+            {children}
+          </CardModal>
+        </Modal>
+      )}
     </CardRoomBigBox>
   );
 };

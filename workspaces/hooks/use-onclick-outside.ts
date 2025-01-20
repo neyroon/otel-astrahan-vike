@@ -2,7 +2,7 @@ import { useEffect } from "preact/hooks";
 
 export const useOnClickOutside = (ref, handler) => {
   useEffect(() => {
-    const listener = (event) => {
+    const listener = (event: MouseEvent) => {
       if (!ref.current || ref.current.contains(event.target)) {
         return;
       }

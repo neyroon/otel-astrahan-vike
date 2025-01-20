@@ -5,4 +5,5 @@ export * from "./icons";
 export * from "./image";
 export * from "./link";
 export * from "./loader";
+export * from "./modal";
 export * from "./typography";

@@ -1,10 +1,12 @@
 export { ArrowLeftIcon } from "./arrow-left";
 export { ArrowRightIcon } from "./arrow-right";
+export { ArrowsIcon } from "./arrows";
 export { CalendarIcon } from "./calendar";
 export { CircleBottomIcon } from "./circle-bottom";
 export { CircleLeftIcon } from "./circle-left";
 export { CircleRightIcon } from "./circle-right";
 export { CircleTopIcon } from "./circle-top";
+export { CloseIcon } from "./close";
 export { Logotype } from "./logotype";
 export { MinusIcon } from "./minus";
 export { PhoneIcon } from "./phone";

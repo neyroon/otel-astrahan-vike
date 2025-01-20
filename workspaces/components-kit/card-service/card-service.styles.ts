@@ -42,3 +42,20 @@ export const Subtitle = styled(Typography)`
   opacity: 70%;
   z-index: 1;
 `;
+
+export const GradientBox = styled.div`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 28.5%,
+    rgba(0, 0, 0, 0.68) 75%
+  );
+
+  border-radius: 28px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+`;

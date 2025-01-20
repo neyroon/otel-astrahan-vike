@@ -1,5 +1,5 @@
 import { Colors } from "@tokens";
-import { FunctionComponent } from "preact";
+import { FunctionalComponent } from "preact";
 import { Size } from "../typography";
 import { LinkBox } from "./link.styles";
 
@@ -9,7 +9,7 @@ interface LinkProps {
   color?: Colors;
 }
 
-export const Link: FunctionComponent<HTMLAnchorElement & LinkProps> = ({
+export const Link: FunctionalComponent<HTMLAnchorElement & LinkProps> = ({
   size,
   color = "content-primary",
   children,

@@ -3,6 +3,7 @@ import { AccommodationBlock } from "./blocks/accommodation-block";
 import { AdressBlock } from "./blocks/adress-block";
 import { FooterBlock } from "./blocks/footer-block";
 import { HeaderBlock } from "./blocks/header-block";
+import { PickHouseBlock } from "./blocks/pick-house-block";
 import { PosterBlock } from "./blocks/poster-block";
 import { ReservationBlock } from "./blocks/reservation-block";
 import { ReviewsBlock } from "./blocks/reviews-block";
@@ -19,6 +20,7 @@ function Page() {
       <AboutBlock />
       <AccommodationBlock />
       <ServiceBlock />
+      <PickHouseBlock />
       <SpecialBlock />
       <PosterBlock />
       <AdressBlock />

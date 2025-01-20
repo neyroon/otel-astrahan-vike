@@ -4,6 +4,7 @@ import {
   BannerSlideBox,
   BottomText,
   Description,
+  GradientBox,
   StyledImage,
   TopText,
 } from "./banner-slide.style";
@@ -16,6 +17,7 @@ export const BannerSlide: FunctionComponent<BannerSlideProps> = ({
   return (
     <BannerSlideBox>
       <StyledImage sources={[imageLink1x, imageLink2x]} loading="eager" />
+      <GradientBox />
       <TopText size="20" color="white">
         Бары, рестораны, бани
       </TopText>

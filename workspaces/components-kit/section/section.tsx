@@ -19,6 +19,7 @@ interface SectionProps {
   withBorderRadiusTop?: boolean;
   withBorderRadiusBottom?: boolean;
   className?: string;
+  id?: string;
 }
 
 export const Section: FunctionComponent<SectionProps> = ({

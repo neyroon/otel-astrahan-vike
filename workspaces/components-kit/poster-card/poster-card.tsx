@@ -3,6 +3,7 @@ import {
   BottomTextBox,
   DateText,
   Description,
+  GradientBox,
   PosterCardBox,
   StyledImage,
   Title,
@@ -26,6 +27,7 @@ export const PosterCard: FunctionalComponent<PosterCardProps> = ({
   return (
     <PosterCardBox>
       <StyledImage sources={[imageLink1x, imageLink2x]} />
+      <GradientBox />
       <DateText size="18" color="white">
         {date}
       </DateText>

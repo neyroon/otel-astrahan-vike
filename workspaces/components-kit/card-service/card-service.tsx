@@ -1,6 +1,7 @@
 import {
   CardServiceBox,
   CardServiceText,
+  GradientBox,
   StyledImage,
   Subtitle,
   Title,
@@ -20,6 +21,7 @@ export const CardService = ({
   return (
     <CardServiceBox>
       <StyledImage sources={[imageLink1x, imageLink2x]} />
+      <GradientBox />
       <CardServiceText>
         <Title color="white" size="28">
           {title}

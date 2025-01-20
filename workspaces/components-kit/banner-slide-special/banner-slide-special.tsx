@@ -4,6 +4,7 @@ import {
   BannerSlideBox,
   BottomText,
   Description,
+  GradientBox,
   StyledButton,
   StyledImage,
 } from "./banner-slide-special.style";
@@ -16,6 +17,7 @@ export const BannerSlideSpecial: FunctionComponent<BannerSlideProps> = ({
   return (
     <BannerSlideBox>
       <StyledImage sources={[imageLink1x, imageLink2x]} />
+      <GradientBox />
       <BottomText>
         <Typography size="48" color="white">
           Скидка 15% при проживании от 2х ночей

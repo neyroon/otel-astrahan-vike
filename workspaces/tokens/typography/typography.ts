@@ -70,8 +70,8 @@ export const allTypography: FontMap<AllTypo> = {
     },
     mobile: {
       weight: typeface.BOOK.weight,
-      size: 20,
-      lineHeight: 120,
+      size: 18,
+      lineHeight: 130,
     },
   },
   "18": {
