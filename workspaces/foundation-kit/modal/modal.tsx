@@ -1,7 +1,7 @@
-import { CloseIcon } from "@foundation";
 import { useIsMobile, useMountTransition, useOnClickOutside } from "@hooks";
 import { FunctionalComponent } from "preact";
 import { useEffect, useRef } from "preact/hooks";
+import { CloseIcon } from "../icons/close";
 import { Backdrop, Content, IconBox, ModalBox } from "./modal.styles";
 
 interface Modal {
