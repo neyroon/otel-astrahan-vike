@@ -21,11 +21,6 @@ export const Content = styled.div`
   width: 100%;
   z-index: 1000;
   background-color: ${allColors.WHITE};
-  height: fit-content;
-
-  @supports (-webkit-touch-callout: none) {
-    height: -webkit-fill-available;
-  }
 
   border-top-right-radius: 16px;
   border-top-left-radius: 16px;
@@ -36,7 +31,7 @@ export const Content = styled.div`
     left: 50%;
     top: 50%;
     opacity: 0;
-
+    height: fit-content;
     transform: translate(-50%, -50%);
     border-radius: 28px;
     max-width: 80vw;
