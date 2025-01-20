@@ -25,14 +25,12 @@ export const Content = styled.div`
   border-top-right-radius: 16px;
   border-top-left-radius: 16px;
   transition: transform 0.4s ease, opacity 0.4s ease;
-  transform: translateY(100%);
 
   height: fit-content;
 
   @media screen and (min-width: ${breakpoints.DESKTOP_S}px) {
     left: 50%;
     top: 50%;
-    opacity: 0;
     transform: translate(-50%, -50%);
     border-radius: 28px;
     max-width: 80vw;

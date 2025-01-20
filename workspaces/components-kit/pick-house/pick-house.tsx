@@ -96,7 +96,6 @@ export const PickHouse: FunctionalComponent<PickHouseProps> = ({
       let x = e.clientX + 100;
       let y = e.clientY - mouseCoords.current.scrollTop;
       if (x + 392 > containerRef.current.offsetWidth) {
-        console.log("more then ");
         x = containerRef.current.clientWidth - 392;
         y = y - 170;
       }
@@ -126,11 +125,11 @@ export const PickHouse: FunctionalComponent<PickHouseProps> = ({
     <>
       <PickHouseBox
         ref={containerRef}
-        onMouseDown={handleMouseDown}
-        onMouseUp={handleMouseUp}
-        onMouseMove={handleMouseMove}
-        onMouseOver={handleHouseMouseOver}
-        onMouseOut={handleHouseMouseOut}
+        onMouseDown={!isMobile && handleMouseDown}
+        onMouseUp={!isMobile && handleMouseUp}
+        onMouseMove={!isMobile && handleMouseMove}
+        onMouseOver={!isMobile && handleHouseMouseOver}
+        onMouseOut={!isMobile && handleHouseMouseOut}
         onClick={handleHouseClick}
       >
         <Background sources={[imageLink, imageLink]} />

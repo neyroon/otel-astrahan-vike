@@ -1,4 +1,4 @@
-import { useIsMobile, useMountTransition, useOnClickOutside } from "@hooks";
+import { useIsMobile, useOnClickOutside } from "@hooks";
 import { FunctionalComponent } from "preact";
 import { useEffect, useRef } from "preact/hooks";
 import { CloseIcon } from "../icons/close";
@@ -16,7 +16,6 @@ export const Modal: FunctionalComponent<Modal> = ({
 }) => {
   const contentRef = useRef(null);
   const isMobile = useIsMobile();
-  const hasTransitionedIn = useMountTransition(isOpen, 400);
   const handleModalClose = () => {
     document.body.style.overflow = "visible";
     onClose();
@@ -31,15 +30,7 @@ export const Modal: FunctionalComponent<Modal> = ({
   return (
     <ModalBox style={{ visibility: isOpen ? "visible" : "hidden" }}>
       <Backdrop />
-      <Content
-        style={
-          hasTransitionedIn && {
-            transform: isMobile && "translateY(0)",
-            opacity: !isMobile && 1,
-          }
-        }
-        ref={contentRef}
-      >
+      <Content ref={contentRef}>
         {children}
         <IconBox onClick={handleModalClose}>
           <CloseIcon />
