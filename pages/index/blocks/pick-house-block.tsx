@@ -4,7 +4,7 @@ import pickHouseImage from "../assets/pick-house-image.webp";
 
 export const PickHouseBlock = () => {
   return (
-    <Section>
+    <Section title="Выберите дом на генплане">
       <PickHouse imageLink={pickHouseImage} />
     </Section>
   );
