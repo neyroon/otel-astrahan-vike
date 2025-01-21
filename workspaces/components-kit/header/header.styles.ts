@@ -71,7 +71,7 @@ export const Contacts = styled.div`
 
   @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
     gap: 32px;
-    width: 546px;
+    width: 600px;
     justify-content: end;
   }
 `;
