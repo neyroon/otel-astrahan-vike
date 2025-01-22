@@ -19,7 +19,7 @@ export const Breadcrumbs: FunctionComponent<{
   return (
     <BreadcrumbsBox>
       <Container>
-        <Background sources={[imageLink1x]} />
+        <Background sources={[imageLink1x]} alt="Фон" />
         <GradientBox />
         <TextBox>
           <Breadcrumb>

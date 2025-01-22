@@ -24,7 +24,7 @@ export const BannerStatic: FunctionComponent<BannerStaticProps> = ({
 }) => {
   return (
     <BannerStaticBox>
-      <StyledImage sources={[imageLink1x]} />
+      <StyledImage sources={[imageLink1x]} alt="Фон" />
       <Gradient />
       <Content>
         <TextBox>
