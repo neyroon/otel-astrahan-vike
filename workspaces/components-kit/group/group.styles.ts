@@ -10,11 +10,11 @@ export const GroupBox = styled.div`
     flex-direction: row;
 
     & > :first-child {
-      width: calc(70% - 13px);
+      width: calc(100% - 26px - 435px);
     }
 
     & > :nth-child(2) {
-      width: calc(30% - 13px);
+      width: 435px;
     }
   }
 `;
