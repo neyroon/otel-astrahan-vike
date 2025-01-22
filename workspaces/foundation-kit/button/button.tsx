@@ -17,7 +17,7 @@ export const Button: FunctionComponent<ButtonProps> = ({
   size = "m",
   elementAs = "link",
   design = "primary",
-  href = "/#reservation",
+  href = "/reservation",
   ...rest
 }) => {
   if (elementAs === "link")

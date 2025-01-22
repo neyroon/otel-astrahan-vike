@@ -93,9 +93,7 @@ export const Header: FunctionComponent = () => {
                 +7 920 895 30 30
               </Phone>
             </PhoneBox>
-            <StyledButton href="/#reservation" size="s">
-              Забронировать
-            </StyledButton>
+            <StyledButton size="s">Забронировать</StyledButton>
             <MenuButton aria-label="Меню" onClick={handleMenuButtonClick}>
               <MenuItemContainer>
                 <MenuItem isOpen={isOpen} />

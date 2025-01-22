@@ -46,7 +46,7 @@ export const CardRoomBig: FunctionComponent<CardRoomBigProps> = ({
   doubleBed,
   sofaBed,
   button1text = "Выбрать дату",
-  button1Href = "/#reservation",
+  button1Href = "/reservation",
   withButtons = true,
   children,
   ...props
