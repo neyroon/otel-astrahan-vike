@@ -14,10 +14,12 @@ export const ReservationBox = styled.div`
   border-radius: 28px;
   text-align: center;
   z-index: 1;
+  scroll-margin-top: 123px;
 
   @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
     margin-top: 0;
     padding: 40px;
+    scroll-margin-top: 123px;
   }
 `;
 

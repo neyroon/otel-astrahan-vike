@@ -17,7 +17,7 @@ const StyledSection = styled(Section)`
 
 export const ReservationBlock = () => {
   return (
-    <StyledSection backgroundColor="dark-gray" id="reservation">
+    <StyledSection backgroundColor="dark-gray">
       <Group>
         <Banner>
           <BannerSlide imageLink1x={houseImg} imageLink2x={houseImg} />
