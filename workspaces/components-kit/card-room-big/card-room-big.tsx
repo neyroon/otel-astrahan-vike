@@ -23,12 +23,13 @@ interface CardRoomBigProps {
   doubleBed?: string;
   sofaBed?: string;
   button1text?: string;
+  button1Href?: string;
   withButtons?: boolean;
 
-  modalImageLink1: string;
-  modalImageLink2: string;
-  modalImageLink3: string;
-  modalImageLink4: string;
+  modalImageLink1?: string;
+  modalImageLink2?: string;
+  modalImageLink3?: string;
+  modalImageLink4?: string;
   modalImageLink5?: string;
   modalImageLink6?: string;
 }
@@ -45,6 +46,7 @@ export const CardRoomBig: FunctionComponent<CardRoomBigProps> = ({
   doubleBed,
   sofaBed,
   button1text = "Выбрать дату",
+  button1Href = "/#reservation",
   withButtons = true,
   children,
   ...props
@@ -97,7 +99,9 @@ export const CardRoomBig: FunctionComponent<CardRoomBigProps> = ({
 
         {withButtons && (
           <Buttons>
-            <Button size="s">{button1text}</Button>
+            <Button size="s" href={button1Href}>
+              {button1text}
+            </Button>
             <Button
               size="s"
               design="secondary"

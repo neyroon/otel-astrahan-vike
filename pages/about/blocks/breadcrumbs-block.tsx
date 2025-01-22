@@ -4,7 +4,7 @@ import breadcrumbsImage from "../assets/breadcrumbs-image.webp";
 export const BreadcrumbsBlock = () => {
   return (
     <Breadcrumbs
-      currentPageText="Романтический отдых"
+      currentPageText="О нашей базе"
       imageLink1x={breadcrumbsImage}
       imageLink2x={breadcrumbsImage}
     />

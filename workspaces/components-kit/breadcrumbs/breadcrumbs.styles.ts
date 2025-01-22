@@ -5,6 +5,13 @@ import { allColors, breakpoints } from "@tokens";
 export const BreadcrumbsBox = styled.div`
   width: 100%;
   position: relative;
+  overflow: hidden;
+  background-color: ${allColors.DARK_GRAY};
+`;
+
+export const Container = styled.div`
+  width: 100%;
+  position: relative;
   height: 158px;
   overflow: hidden;
   border-bottom-left-radius: 28px;

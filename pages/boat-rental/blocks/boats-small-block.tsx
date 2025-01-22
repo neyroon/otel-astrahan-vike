@@ -17,7 +17,7 @@ export const BoatsSmallBlock = () => {
   };
   return (
     <Section backgroundColor="dark-gray" doublePaddingTop>
-      <CardLayout variant="s">
+      <CardLayout variant="m">
         <CardRoomBig
           imageLink1x={cardBoatImage1}
           imageLink2x={cardBoatImage1}
@@ -29,6 +29,7 @@ export const BoatsSmallBlock = () => {
           doubleBed="1 двуспальная кровать"
           sofaBed="1 диван-кровать"
           button1text="Связаться с администратором"
+          button1Href="tel:+79208953030"
           {...modalProps}
         >
           <CardModalContentFish />
@@ -44,66 +45,7 @@ export const BoatsSmallBlock = () => {
           doubleBed="1 двуспальная кровать"
           sofaBed="1 диван-кровать"
           button1text="Связаться с администратором"
-          {...modalProps}
-        >
-          <CardModalContentFish />
-        </CardRoomBig>
-        <CardRoomBig
-          imageLink1x={cardBoatImage1}
-          imageLink2x={cardBoatImage1}
-          title="Катер-Турбо бабка"
-          square="Площадь: 46 m2"
-          peoples="2-4 человек"
-          bedrooms="1 спальни"
-          lounge="1 гостиная"
-          doubleBed="1 двуспальная кровать"
-          sofaBed="1 диван-кровать"
-          button1text="Связаться с администратором"
-          {...modalProps}
-        >
-          <CardModalContentFish />
-        </CardRoomBig>
-        <CardRoomBig
-          imageLink1x={cardBoatImage1}
-          imageLink2x={cardBoatImage1}
-          title="Катер-Турбо бабка"
-          square="Площадь: 36 m2"
-          peoples="2-4 человек"
-          bedrooms="1 спальни"
-          lounge="1 гостиная"
-          doubleBed="1 двуспальная кровать"
-          sofaBed="1 диван-кровать"
-          button1text="Связаться с администратором"
-          {...modalProps}
-        >
-          <CardModalContentFish />
-        </CardRoomBig>
-        <CardRoomBig
-          imageLink1x={cardBoatImage1}
-          imageLink2x={cardBoatImage1}
-          title="Катер-Турбо бабка"
-          square="Площадь: 46 m2"
-          peoples="2-4 человек"
-          bedrooms="1 спальни"
-          lounge="1 гостиная"
-          doubleBed="1 двуспальная кровать"
-          sofaBed="1 диван-кровать"
-          button1text="Связаться с администратором"
-          {...modalProps}
-        >
-          <CardModalContentFish />
-        </CardRoomBig>
-        <CardRoomBig
-          imageLink1x={cardBoatImage1}
-          imageLink2x={cardBoatImage1}
-          title="Катер-Турбо бабка"
-          square="Площадь: 46 m2"
-          peoples="2-4 человек"
-          bedrooms="1 спальни"
-          lounge="1 гостиная"
-          doubleBed="1 двуспальная кровать"
-          sofaBed="1 диван-кровать"
-          button1text="Связаться с администратором"
+          button1Href="tel:+79208953030"
           {...modalProps}
         >
           <CardModalContentFish />

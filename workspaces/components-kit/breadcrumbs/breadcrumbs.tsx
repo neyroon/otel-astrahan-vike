@@ -4,6 +4,7 @@ import {
   Background,
   Breadcrumb,
   BreadcrumbsBox,
+  Container,
   CurrentPageText,
   GradientBox,
   MainLink,
@@ -17,24 +18,26 @@ export const Breadcrumbs: FunctionComponent<{
 }> = ({ imageLink1x, imageLink2x, currentPageText }) => {
   return (
     <BreadcrumbsBox>
-      <Background sources={[imageLink1x]} />
-      <GradientBox />
-      <TextBox>
-        <Breadcrumb>
-          <MainLink size="15" color="white" href="/">
-            Главная
-          </MainLink>
-          <Typography size="15" color="white">
-            /
-          </Typography>
-          <CurrentPageText size="15" color="white">
+      <Container>
+        <Background sources={[imageLink1x]} />
+        <GradientBox />
+        <TextBox>
+          <Breadcrumb>
+            <MainLink size="15" color="white" href="/">
+              Главная
+            </MainLink>
+            <Typography size="15" color="white">
+              /
+            </Typography>
+            <CurrentPageText size="15" color="white">
+              {currentPageText}
+            </CurrentPageText>
+          </Breadcrumb>
+          <MainText size="48" color="white">
             {currentPageText}
-          </CurrentPageText>
-        </Breadcrumb>
-        <MainText size="48" color="white">
-          {currentPageText}
-        </MainText>
-      </TextBox>
+          </MainText>
+        </TextBox>
+      </Container>
     </BreadcrumbsBox>
   );
 };
