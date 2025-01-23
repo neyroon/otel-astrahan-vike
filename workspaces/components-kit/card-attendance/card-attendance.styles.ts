@@ -12,11 +12,19 @@ export const CardAttendanceBox = styled.div`
   @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
     flex-direction: ${({ align }) =>
       align === "left" ? "row" : "row-reverse"};
-    height: 400px;
+    height: 500px;
 
     & > * {
       width: 50%;
     }
+  }
+
+  @media only screen and (min-width: ${breakpoints.DESKTOP_M}px) {
+    height: 450px;
+  }
+
+  @media only screen and (min-width: ${breakpoints.DESKTOP_L}px) {
+    height: 400px;
   }
 `;
 

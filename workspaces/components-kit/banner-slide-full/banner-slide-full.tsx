@@ -16,21 +16,28 @@ import {
 export interface BannerSlideFullProps {
   imageLink1x: string;
   imageLink2x: string;
+  title: string;
+  description: string;
+  square: string;
+  quests: string;
 }
 
 export const BannerSlideFull: FunctionComponent<BannerSlideFullProps> = ({
   imageLink1x,
   imageLink2x,
+  title,
+  description,
+  square,
+  quests,
 }) => {
   return (
     <BannerSlideBox>
       <StyledImage sources={[imageLink1x, imageLink2x]} />
       <GradientBox />
       <CardBox>
-        <Typography size="28">Название номера, можно в 2 строках</Typography>
+        <Typography size="28">{title}</Typography>
         <StyledTypography size="16" color="gray" opacity={60}>
-          Описание уникального расположения, локации и дизайн интерьера номера.
-          Уместить пред.описание в 3 строках для сохранения визуального баланса
+          {description}
         </StyledTypography>
         <FeaturesBox>
           <FeatureContainer>
@@ -60,7 +67,7 @@ export const BannerSlideFull: FunctionComponent<BannerSlideFullProps> = ({
               <Typography size="15" color="gray">
                 Площадь
               </Typography>
-              <Typography size="16">28 m2</Typography>
+              <Typography size="16">{square}</Typography>
             </FeatureTextBox>
           </FeatureContainer>
           <FeatureContainer>
@@ -94,7 +101,7 @@ export const BannerSlideFull: FunctionComponent<BannerSlideFullProps> = ({
               <Typography size="15" color="gray">
                 Гости
               </Typography>
-              <Typography size="16">x2</Typography>
+              <Typography size="16">{quests}</Typography>
             </FeatureTextBox>
           </FeatureContainer>
         </FeaturesBox>

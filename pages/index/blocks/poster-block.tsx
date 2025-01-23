@@ -25,11 +25,12 @@ export const PosterBlock = () => {
         />
         <PosterCard
           date="Дата 01 / 01 / 2024"
-          title="Раннее бронирование"
-          description="Мы всегда рады подстроиться под ваше расписание. Предупредите нас о ваших планах и мы сдеалем все, чтобы номер был готов, а завтрак уже стоял на столе. "
-          imageLink1x={cardPoster2}
-          imageLink2x={cardPoster2}
+          title="Бассейн"
+          description="Это идеальное место для всей семьи, где взрослые оценят возможность заплыва в бассейне глубиной 2 метра, в то время как маленькие гости будут в восторге от специально оборудованной детской безопасной зоны для игр. "
+          imageLink1x={cardPoster5}
+          imageLink2x={cardPoster5}
         />
+
         <PosterCard
           date="Дата 01 / 01 / 2024"
           title="Банные процедуры"
@@ -46,10 +47,10 @@ export const PosterBlock = () => {
         />
         <PosterCard
           date="Дата 01 / 01 / 2024"
-          title="Бассейн"
-          description="Lorem Ipsum - это текст-'рыба', часто используемый в печати и вэб-дизайне."
-          imageLink1x={cardPoster5}
-          imageLink2x={cardPoster5}
+          title="Раннее бронирование"
+          description="Мы всегда рады подстроиться под ваше расписание. Предупредите нас о ваших планах и мы сдеалем все, чтобы номер был готов, а завтрак уже стоял на столе. "
+          imageLink1x={cardPoster2}
+          imageLink2x={cardPoster2}
         />
       </PosterLayout>
     </Section>

@@ -1,4 +1,5 @@
 import { Typography } from "@foundation";
+import { FunctionalComponent } from "preact";
 import {
   Box,
   List,
@@ -21,15 +22,21 @@ const listItems = [
   "Можно с домашними животными",
 ];
 
-export const CardModalContentRooms = () => {
+interface CardModalContentRooms {
+  title: string;
+  description: string;
+  price: string;
+}
+
+export const CardModalContentRooms: FunctionalComponent<
+  CardModalContentRooms
+> = ({ title, description, price }) => {
   return (
     <Box>
       <TopTextBox>
-        <Typography size="28">Юрта-Люкс 1</Typography>
+        <Typography size="28">{title}</Typography>
         <Typography size="16" opacity={70}>
-          Дом площадью 43 м² расположен на первой линии. Панорамное остекление
-          и веранда, откуда открывается отличный вид на реку. В доме удобная
-          гостиная совмещенная с кухней и одна спальня. Подходит для 4х гостей.
+          {description}
         </Typography>
       </TopTextBox>
       <ListBlock>
@@ -46,7 +53,7 @@ export const CardModalContentRooms = () => {
       </ListBlock>
       <Price>
         <Typography size="20">Цена за 1 сутки: </Typography>
-        <Typography size="20">15000</Typography>
+        <Typography size="20">{price}</Typography>
       </Price>
       <StyledButton size="s">Выбрать дату</StyledButton>
     </Box>
