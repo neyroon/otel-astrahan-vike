@@ -16,6 +16,7 @@ export const AboutCardsBlock = () => {
           imageLink2x={cardAttendanceImage1}
           title="Рыбалка"
           description="4 сезона в году рыбалка на Белинском банке с профессиональными рыболовными гидами будет радовать вас не только частотой поклёвок, но и трофеями..."
+          linkHref="/fishing"
         />
         <CardAttendance
           imageLink1x={cardAttendanceImage2}
@@ -23,6 +24,7 @@ export const AboutCardsBlock = () => {
           title="Охота"
           align="right"
           description="4 сезона в году рыбалка на Белинском банке с профессиональными рыболовными гидами будет радовать вас не только частотой поклёвок, но и трофеями..."
+          linkHref="/hunting"
         />
         <CardAttendance
           imageLink1x={cardAttendanceImage3}

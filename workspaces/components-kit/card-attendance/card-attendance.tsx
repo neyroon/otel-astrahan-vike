@@ -13,6 +13,7 @@ interface CardAttendanceProps {
   imageLink2x: string;
   title: string;
   description: string;
+  linkHref?: string;
   align?: "left" | "right";
 }
 
@@ -21,6 +22,7 @@ export const CardAttendance: FunctionalComponent<CardAttendanceProps> = ({
   imageLink2x,
   title,
   description,
+  linkHref = "/reservation",
   align = "left",
 }) => {
   return (
@@ -33,7 +35,9 @@ export const CardAttendance: FunctionalComponent<CardAttendanceProps> = ({
             {description}
           </Typography>
         </TextBox>
-        <StyledButton size="s">Подробнее</StyledButton>
+        <StyledButton size="s" href={linkHref}>
+          Подробнее
+        </StyledButton>
       </RightBox>
     </CardAttendanceBox>
   );
