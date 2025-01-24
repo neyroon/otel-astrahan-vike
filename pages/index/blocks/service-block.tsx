@@ -14,7 +14,8 @@ export const ServiceBlock = () => {
           imageLink1x={cardService1}
           imageLink2x={cardService1}
           title="Охота"
-          subtitle="Вы сможете поохотиться на фазанов, уток, гусей, косуль и кабанов"
+          // subtitle="Вы сможете поохотиться на фазанов, уток, гусей, косуль и кабанов"
+          subtitle="Вы сможете поохотиться"
         />
         <CardService
           imageLink1x={cardService2}
