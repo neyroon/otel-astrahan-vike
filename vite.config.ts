@@ -3,7 +3,6 @@ import wyw from "@wyw-in-js/vite";
 import path from "path";
 import vike from "vike/plugin";
 import { UserConfig } from "vite";
-import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 
 const config: UserConfig = {
   plugins: [
@@ -16,7 +15,6 @@ const config: UserConfig = {
         presets: ["@babel/preset-typescript", "@babel/preset-react"],
       },
     }),
-    ViteImageOptimizer(),
   ],
   // We manually add a list of dependencies to be pre-bundled, in order to avoid a page reload at dev start which breaks Vike's CI
   optimizeDeps: {
