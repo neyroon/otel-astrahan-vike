@@ -25,7 +25,7 @@ export const BoatsSmallBlock = () => {
           square="Длина: 4,96 м"
           peoples="Ширина: 1,94 м"
           bedrooms="Вес: 350 кг"
-          lounge="Грузоподъемность: 485кг"
+          lounge="Грузоподъемность: 485кг "
           button1text="Связаться с администратором"
           button1Href="tel:+79208953030"
           {...modalProps}
