@@ -23,7 +23,7 @@ export const ReviewsBlock = () => {
       <CardReviewLayout>
         <CardReview
           date="07 / 03 / 2024"
-          houseName="Название домика"
+          houseName="Юрта-Хан"
           fullName="Иванова Валерия"
           grade={5}
           firstImageLink={cardReview1}
@@ -33,7 +33,7 @@ export const ReviewsBlock = () => {
         />
         <CardReview
           date="07 / 03 / 2024"
-          houseName="Название домика"
+          houseName="Юрта-бий"
           fullName="Иванова Валерия"
           grade={5}
           firstImageLink={cardReview4}
@@ -43,7 +43,7 @@ export const ReviewsBlock = () => {
         />
         <CardReview
           date="07 / 03 / 2024"
-          houseName="Название домика"
+          houseName="Юрта-Хан"
           fullName="Иванова Валерия"
           grade={5}
           firstImageLink={cardReview7}
@@ -53,7 +53,7 @@ export const ReviewsBlock = () => {
         />
         <CardReview
           date="07 / 03 / 2024"
-          houseName="Название домика"
+          houseName="Юрта-бий"
           fullName="Иванова Валерия"
           grade={5}
           firstImageLink={cardReview1}
@@ -63,7 +63,7 @@ export const ReviewsBlock = () => {
         />
         <CardReview
           date="07 / 03 / 2024"
-          houseName="Название домика"
+          houseName="Юрта-Хан"
           fullName="Иванова Валерия"
           grade={5}
           firstImageLink={cardReview4}
@@ -73,7 +73,7 @@ export const ReviewsBlock = () => {
         />
         <CardReview
           date="07 / 03 / 2024"
-          houseName="Название домика"
+          houseName="Юрта-Хан"
           fullName="Иванова Валерия"
           grade={5}
           firstImageLink={cardReview7}

@@ -45,7 +45,7 @@ export const CardHouse: FunctionalComponent<CardHouseProps> = ({
       <HouseImage sources={[houseImage, houseImage]} />
       <CardHouseContent>
         <CardHouseText>
-          <Typography size="18">Название домика</Typography>
+          <Typography size="18">Юрта-Хан</Typography>
           <Typography size="16" opacity={60}>
             Класс домика
           </Typography>
