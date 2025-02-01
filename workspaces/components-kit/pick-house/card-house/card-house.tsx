@@ -47,7 +47,7 @@ export const CardHouse: FunctionalComponent<CardHouseProps> = ({
         <CardHouseText>
           <Typography size="18">Юрта-Хан</Typography>
           <Typography size="16" opacity={60}>
-            Класс домика
+            Дoм 48 кв.м c oтдeльной спальнeй
           </Typography>
         </CardHouseText>
         <InfoLayout>
