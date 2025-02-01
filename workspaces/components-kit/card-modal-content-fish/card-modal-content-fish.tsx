@@ -11,19 +11,19 @@ import {
 } from "./card-modal-content-fish.styles";
 
 const listItems = [
-  "Скорость",
-  "Вместимость",
-  "Запас хода",
-  "Объем бака",
-  "Максимальная скорость",
-  "Рыболовных удочек",
+  "Пассажировместимость: 5 чел",
+  "Длина: 4,96 м",
+  "Ширина: 1,94 м",
+  "Вес: 350 кг",
+  "Грузоподъемность: 485кг",
+  "Мощность двигателя макс: 60 л.с.",
 ];
 
 export const CardModalContentFish = () => {
   return (
     <Box>
       <TopTextBox>
-        <Typography size="28">Катер-Турбо бабка</Typography>
+        <Typography size="28">Волжанка 46 Fish</Typography>
       </TopTextBox>
       <ListBlock>
         <MiddleText size="16">Характеристики</MiddleText>

@@ -6,6 +6,7 @@ export const Box = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding-bottom: 16px;
 
   @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
     gap: 32px;

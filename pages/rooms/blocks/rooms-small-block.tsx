@@ -27,7 +27,7 @@ export const RoomsSmallBlock = () => {
           imageLink2x={cardRoomsSmall1}
           title="Номер 1"
           square="Площадь: 36 m2"
-          peoples="2-4 человек"
+          peoples="2-5 человек"
           bedrooms="1 спальни"
           lounge="1 гостиная"
           doubleBed="1 двуспальная кровать"
@@ -39,9 +39,9 @@ export const RoomsSmallBlock = () => {
         <CardRoomBig
           imageLink1x={cardRoomsSmall1}
           imageLink2x={cardRoomsSmall1}
-          title="Номер 1"
+          title="Номер 2"
           square="Площадь: 46 m2"
-          peoples="2-4 человек"
+          peoples="2-5 человек"
           bedrooms="1 спальни"
           lounge="1 гостиная"
           doubleBed="1 двуспальная кровать"
@@ -53,9 +53,9 @@ export const RoomsSmallBlock = () => {
         <CardRoomBig
           imageLink1x={cardRoomsSmall1}
           imageLink2x={cardRoomsSmall1}
-          title="Номер 1"
+          title="Номер 3"
           square="Площадь: 46 m2"
-          peoples="2-4 человек"
+          peoples="2-5 человек"
           bedrooms="1 спальни"
           lounge="1 гостиная"
           doubleBed="1 двуспальная кровать"
@@ -67,9 +67,9 @@ export const RoomsSmallBlock = () => {
         <CardRoomBig
           imageLink1x={cardRoomsSmall1}
           imageLink2x={cardRoomsSmall1}
-          title="Номер 1"
+          title="Номер 4"
           square="Площадь: 36 m2"
-          peoples="2-4 человек"
+          peoples="2-5 человек"
           bedrooms="1 спальни"
           lounge="1 гостиная"
           doubleBed="1 двуспальная кровать"
@@ -81,9 +81,9 @@ export const RoomsSmallBlock = () => {
         <CardRoomBig
           imageLink1x={cardRoomsSmall1}
           imageLink2x={cardRoomsSmall1}
-          title="Номер 1"
+          title="Номер 5"
           square="Площадь: 46 m2"
-          peoples="2-4 человек"
+          peoples="2-5 человек"
           bedrooms="1 спальни"
           lounge="1 гостиная"
           doubleBed="1 двуспальная кровать"
@@ -95,9 +95,9 @@ export const RoomsSmallBlock = () => {
         <CardRoomBig
           imageLink1x={cardRoomsSmall1}
           imageLink2x={cardRoomsSmall1}
-          title="Номер 1"
+          title="Номер 6"
           square="Площадь: 46 m2"
-          peoples="2-4 человек"
+          peoples="2-5 человек"
           bedrooms="1 спальни"
           lounge="1 гостиная"
           doubleBed="1 двуспальная кровать"

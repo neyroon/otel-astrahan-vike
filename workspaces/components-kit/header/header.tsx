@@ -148,8 +148,8 @@ export const Header: FunctionComponent = () => {
                 <Typography size="15" opacity={60}>
                   Телефон:
                 </Typography>
-                <Link size="16-bold" href="tel:+74951505402">
-                  +7 495 150-54-02
+                <Link size="16-bold" href="tel:+79208953030">
+                  +7 920 895 30 30
                 </Link>
               </Contact>
               <Contact>
@@ -164,7 +164,7 @@ export const Header: FunctionComponent = () => {
                 <Typography size="15" opacity={60}>
                   График работы:
                 </Typography>
-                <Typography size="16-bold">пн–вс | 10:00 – 20:00</Typography>
+                <Typography size="16-bold">пн–вс | 08:00 – 22:00</Typography>
               </Contact>
               <SocialContainer>
                 <Social

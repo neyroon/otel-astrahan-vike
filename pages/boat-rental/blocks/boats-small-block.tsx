@@ -21,29 +21,11 @@ export const BoatsSmallBlock = () => {
         <CardRoomBig
           imageLink1x={cardBoatImage1}
           imageLink2x={cardBoatImage1}
-          title="Катер-Турбо бабка"
-          square="Площадь: 36 m2"
-          peoples="2-4 человек"
-          bedrooms="1 спальни"
-          lounge="1 гостиная"
-          doubleBed="1 двуспальная кровать"
-          sofaBed="1 диван-кровать"
-          button1text="Связаться с администратором"
-          button1Href="tel:+79208953030"
-          {...modalProps}
-        >
-          <CardModalContentFish />
-        </CardRoomBig>
-        <CardRoomBig
-          imageLink1x={cardBoatImage1}
-          imageLink2x={cardBoatImage1}
-          title="Катер-Турбо бабка"
-          square="Площадь: 46 m2"
-          peoples="2-4 человек"
-          bedrooms="1 спальни"
-          lounge="1 гостиная"
-          doubleBed="1 двуспальная кровать"
-          sofaBed="1 диван-кровать"
+          title="Волжанка 46 Fish"
+          square="Длина: 4,96 м"
+          peoples="Ширина: 1,94 м"
+          bedrooms="Вес: 350 кг"
+          lounge="Грузоподъемность: 485кг"
           button1text="Связаться с администратором"
           button1Href="tel:+79208953030"
           {...modalProps}

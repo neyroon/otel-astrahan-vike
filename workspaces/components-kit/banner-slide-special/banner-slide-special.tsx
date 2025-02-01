@@ -20,11 +20,11 @@ export const BannerSlideSpecial: FunctionComponent<BannerSlideProps> = ({
       <GradientBox />
       <BottomText>
         <Typography size="48" color="white">
-          Скидка 15% при проживании от 2х ночей
+          Специальный тариф Ранние пташки - скидка 50% для первых гостей нашего
+          отеля во время технического открытия
         </Typography>
         <Description size="18" color="white">
-          Проведите больше времени на природе и с близкими вдали от суеты
-          города.
+          Проведите больше времени с близкими на природе вдали от суеты.
         </Description>
         <StyledButton size="m">Забронировать номер</StyledButton>
       </BottomText>

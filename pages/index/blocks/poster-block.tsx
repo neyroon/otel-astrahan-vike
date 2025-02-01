@@ -18,14 +18,14 @@ export const PosterBlock = () => {
       <PosterLayout>
         <PosterCard
           date="Дата 01 / 01 / 2024"
-          title="SPA"
+          title="Баня - скоро открытие"
           description="Приглашаем попробовать сезонные парения с нашим мастером-пара. Это не просто баня, а целое путешествие в мир традиций. "
           imageLink1x={cardPoster1}
           imageLink2x={cardPoster1}
         />
         <PosterCard
           date="Дата 01 / 01 / 2024"
-          title="Бассейн"
+          title="Бассейн - скоро открытие"
           description="Это идеальное место для всей семьи, где взрослые оценят возможность заплыва в бассейне глубиной 2 метра, в то время как маленькие гости будут в восторге от специально оборудованной детской безопасной зоны для игр. "
           imageLink1x={cardPoster5}
           imageLink2x={cardPoster5}

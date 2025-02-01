@@ -22,14 +22,14 @@ export const AboutBlock = () => {
           imageLink2x={cardAbout1}
         />
         <CardAbout
-          number="12"
+          number="8"
           text="Дизайнерских домов скандинавского типа"
           imageLink1x={cardAbout2}
           imageLink2x={cardAbout2}
         />
         <CardAbout
           number="9"
-          text="Лодок с спортивными моторами"
+          text="Лодок для рыбалки и развлекательных прогулок по воде"
           imageLink1x={cardAbout3}
           imageLink2x={cardAbout3}
         />

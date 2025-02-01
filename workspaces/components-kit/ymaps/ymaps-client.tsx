@@ -39,7 +39,7 @@ export default () => (
           <IconBox>
             <TimeIcon />
           </IconBox>
-          <InfoText size="16">пн-вс | 10:00 - 22:00</InfoText>
+          <InfoText size="16">пн-вс | 08:00 - 22:00</InfoText>
         </InfoBlock>
         <StyledButton>Забронировать номер</StyledButton>
       </BottomBox>
