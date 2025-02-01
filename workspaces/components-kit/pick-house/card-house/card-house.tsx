@@ -52,7 +52,7 @@ export const CardHouse: FunctionalComponent<CardHouseProps> = ({
         </CardHouseText>
         <InfoLayout>
           <InfoBox>
-            <Title size="15">Площадь: 48 m2</Title>
+            <Title size="15">Площадь: 48 м²</Title>
           </InfoBox>
           <InfoBox>
             <Description size="15">Гости: 4-5</Description>
