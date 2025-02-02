@@ -125,6 +125,7 @@ export const PickHouse: FunctionalComponent<PickHouseProps> = ({
   const handleHouseClick = (e: MouseEvent) => {
     if (!isGuideBoxOpen && e.target.parentElement.tagName === "g") {
       setIsHouseClicked(true);
+      setCardContent(e.target.parentElement.dataset);
     }
   };
 

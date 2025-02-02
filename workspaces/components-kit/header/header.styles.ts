@@ -193,8 +193,6 @@ export const MenuMobile = styled.section`
   right: 0;
   width: 100vw;
   z-index: 100;
-  height: 100vh;
-  height: 100dvh;
   background-color: ${allColors.DARK_GRAY};
 
   @supports (-webkit-touch-callout: none) {

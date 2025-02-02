@@ -31,6 +31,8 @@ export const StyledSvg = styled.svg`
   height: 1310px;
   left: 0;
   top: 0;
+  max-height: none;
+  max-width: none;
 
   & g {
     & path {
