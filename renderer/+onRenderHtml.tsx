@@ -25,7 +25,8 @@ async function onRenderHtml(pageContext) {
     (documentProps && documentProps.description) ||
     "Официальный сайт парк-отеля River&Fish. Отдых с семьей и друзьями в живописных местах: рыбалка, охота, прогулки по лесу, прокат лодок, услуги егеря и т.д. Комфортабельные домики, чистый воздух и единение с природой.";
   const reservationScript =
-    pageContext.urlOriginal === "/"
+    pageContext.urlOriginal === "/" ||
+    pageContext.urlOriginal === "/reservation"
       ? `<script type='text/javascript'>(function(w) {
         var q = [
             ['setContext', 'TL-INT-riverfish-hotel_2025-01-21', 'ru'],
