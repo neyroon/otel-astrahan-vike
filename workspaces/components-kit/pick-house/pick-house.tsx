@@ -110,6 +110,12 @@ export const PickHouse: FunctionalComponent<PickHouseProps> = ({
       if (x > containerRef.current.offsetWidth / 2) {
         x -= 592;
       }
+      if (y < containerRef.current.offsetHeight / 2) {
+        y += 150;
+      }
+      if (y > containerRef.current.offsetHeight / 2) {
+        y -= 150;
+      }
 
       mouseCoordsHouse.current.pageX = x;
       mouseCoordsHouse.current.pageY = y;

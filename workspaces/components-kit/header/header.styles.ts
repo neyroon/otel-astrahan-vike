@@ -194,10 +194,6 @@ export const MenuMobile = styled.section`
   width: 100vw;
   z-index: 100;
   background-color: ${allColors.DARK_GRAY};
-
-  @supports (-webkit-touch-callout: none) {
-    height: -webkit-fill-available;
-  }
 `;
 
 export const MenuMobileContainer = styled.div`

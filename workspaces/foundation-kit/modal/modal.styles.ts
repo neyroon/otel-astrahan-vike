@@ -11,7 +11,7 @@ export const Backdrop = styled.div`
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 1000;
+  z-index: 10000000;
 `;
 export const Content = styled.div`
   position: fixed;
@@ -19,7 +19,7 @@ export const Content = styled.div`
   right: 0;
   bottom: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 10000000;
   background-color: ${allColors.WHITE};
 
   border-top-right-radius: 16px;
