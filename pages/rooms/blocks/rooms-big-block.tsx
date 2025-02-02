@@ -27,7 +27,7 @@ export const RoomsBigBlock = () => {
           imageLink1x={cardRoomsBig1}
           imageLink2x={cardRoomsBig1}
           title="Юрта-Бий"
-          description="Дом 36 кв.м вмешает 4х взpocлых и 1 peбeнка. Нoвый дoм на бepегу Волги в Aстpаxани на территoрии cвeжeпоcтpоенногo эко-отeля River&Fish приглашает любитeлей увлекaтeльнoй pыбалки, oхоты и отдыха в компании друзей и близких! "
+          description="Дом 36 кв.м вмешает 4х взpocлых и 1 peбeнка. Нoвый дoм на бepегу Волги в Aстpаxани на территoрии cвeжeпоcтpоенногo эко-отeля River&Fish приглашает любитeлей увлекaтeльнoй pыбалки, oхоты и отдыха в компании друзей и близких!"
           square="Площадь: 36 м² "
           peoples="2-5 человека"
           bedrooms="1 спальня"
