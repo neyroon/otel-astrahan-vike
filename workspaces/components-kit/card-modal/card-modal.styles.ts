@@ -8,8 +8,8 @@ export const CardModalBox = styled.div`
 
   height: calc(100% - 20px);
   overflow-y: scroll;
-  max-height: 90vh;
-  max-height: 90dvh;
+  max-height: 80vh;
+  max-height: 80dvh;
   border-radius: 16px;
 
   @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {

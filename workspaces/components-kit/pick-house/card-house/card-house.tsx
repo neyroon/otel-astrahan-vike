@@ -6,7 +6,6 @@ import { Typography } from "@foundation";
 import { useIsMobile } from "@hooks";
 import { FunctionalComponent } from "preact";
 import { CSSProperties } from "preact/compat";
-import houseImage from "../assets/house-image.webp";
 import {
   CardHouseBox,
   CardHouseContent,
@@ -18,18 +17,25 @@ import {
 } from "./card-house.styles";
 
 interface CardHouseProps {
-  isHouseHovered?: boolean;
+  title: string;
+  description?: string;
+  imagelink: string;
+  isHovered?: boolean;
+  ishouse: boolean;
   mouseCoordsHouse?: { pageX: number; pageY: number };
   onClose?: () => void;
 }
 
 export const CardHouse: FunctionalComponent<CardHouseProps> = ({
-  isHouseHovered,
+  title,
+  description,
+  imagelink,
+  isHovered,
+  ishouse,
   mouseCoordsHouse,
   onClose,
 }) => {
   const isMobile = useIsMobile();
-
   const cardHouseStyles: CSSProperties = !isMobile
     ? {
         display: "block",
@@ -41,23 +47,25 @@ export const CardHouse: FunctionalComponent<CardHouseProps> = ({
       };
 
   return (
-    <CardHouseBox style={isHouseHovered && cardHouseStyles}>
-      <HouseImage sources={[houseImage, houseImage]} />
+    <CardHouseBox style={isHovered && cardHouseStyles}>
+      <HouseImage sources={[imagelink, imagelink]} />
       <CardHouseContent>
         <CardHouseText>
-          <Typography size="18">Юрта-Хан</Typography>
+          <Typography size="18">{title}</Typography>
           <Typography size="16" opacity={60}>
-            Дoм 48 кв.м c oтдeльной спальнeй
+            {description}
           </Typography>
         </CardHouseText>
-        <InfoLayout>
-          <InfoBox>
-            <Title size="15">Площадь: 48 м²</Title>
-          </InfoBox>
-          <InfoBox>
-            <Description size="15">Гости: 4-5</Description>
-          </InfoBox>
-        </InfoLayout>
+        {ishouse && (
+          <InfoLayout>
+            <InfoBox>
+              <Title size="15">Площадь: 48 м²</Title>
+            </InfoBox>
+            <InfoBox>
+              <Description size="15">Гости: 4-5</Description>
+            </InfoBox>
+          </InfoLayout>
+        )}
         {isMobile && (
           <StyledButton size="s" onClick={onClose}>
             Заказать звонок

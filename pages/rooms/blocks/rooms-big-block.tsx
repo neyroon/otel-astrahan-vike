@@ -37,7 +37,7 @@ export const RoomsBigBlock = () => {
           {...modalProps}
         >
           <CardModalContentRooms
-            title="Юрта-Люкс"
+            title="Юрта-Бий"
             description={
               <>
                 "Новый дoм на бepегу Волги в Астрaхaни приглaшаeт любителeй

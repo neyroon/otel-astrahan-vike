@@ -19,16 +19,16 @@ export const Background = styled(Image)`
   border-radius: 28px;
   img {
     border-radius: 28px;
-    width: 2275px;
-    height: 1300px;
+    width: 2348px;
+    height: 1304px;
     object-fit: initial;
   }
 `;
 
 export const StyledSvg = styled.svg`
   position: absolute;
-  width: 2275px;
-  height: 1286px;
+  width: 2350px;
+  height: 1310px;
   left: 0;
   top: 0;
 

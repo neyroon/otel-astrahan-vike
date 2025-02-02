@@ -5,11 +5,12 @@ import { BannerOnlyScrollbarSlide } from "@components/banner-slide-only-scrollba
 import { InformationBanners } from "@components/Information-banners";
 import { InformationDescription } from "@components/information-description";
 import { Section } from "@components/section";
-import BannerHalfImage from "../assets/banner-half-1.webp";
+import BannerHalfImage1 from "../assets/banner-half-1.webp";
+import BannerOnlySidebarImage1 from "../assets/banner-only-scrollbar-image-1.webp";
 import BannerOnlySidebarImage2 from "../assets/banner-only-scrollbar-image-2.webp";
 import BannerOnlySidebarImage3 from "../assets/banner-only-scrollbar-image-3.webp";
 import BannerOnlySidebarImage4 from "../assets/banner-only-scrollbar-image-4.webp";
-import BannerOnlySidebarImage5 from "../assets/banner-only-scrollbar-image-5.webp";
+import BannerHalfImage2 from "../assets/banner-only-scrollbar-image-5.webp";
 
 export const InformationBlock = () => {
   return (
@@ -17,12 +18,12 @@ export const InformationBlock = () => {
       <InformationBanners>
         <BannerHalf>
           <BannerSlideHalf
-            imageLink1x={BannerHalfImage}
-            imageLink2x={BannerHalfImage}
+            imageLink1x={BannerHalfImage1}
+            imageLink2x={BannerHalfImage1}
           />
           <BannerSlideHalf
-            imageLink1x={BannerHalfImage}
-            imageLink2x={BannerHalfImage}
+            imageLink1x={BannerHalfImage2}
+            imageLink2x={BannerHalfImage2}
           />
         </BannerHalf>
         <InformationDescription
@@ -31,10 +32,6 @@ export const InformationBlock = () => {
           description3="Наша база предлагает совершенно новый вид отдыха в Астрахани. В Дельте больше нет таких уникальных мест, где вам предложат богатый выбор услуг и такое душевное отношение к гостям. Русская баня с купелью настоящее удовольствие для тех, кто провел весь день на раскатах. Наш склад предлагает любое снаряжение для рыбной ловли и охоты, поэтому вы можете путешествовать 'на легке'!"
         />
         <BannerOnlyScrollbar>
-          {/* <BannerOnlyScrollbarSlide
-            imageLink1x={BannerOnlySidebarImage1}
-            imageLink2x={BannerOnlySidebarImage1}
-          /> */}
           <BannerOnlyScrollbarSlide
             imageLink1x={BannerOnlySidebarImage2}
             imageLink2x={BannerOnlySidebarImage2}
@@ -48,8 +45,8 @@ export const InformationBlock = () => {
             imageLink2x={BannerOnlySidebarImage4}
           />
           <BannerOnlyScrollbarSlide
-            imageLink1x={BannerOnlySidebarImage5}
-            imageLink2x={BannerOnlySidebarImage5}
+            imageLink1x={BannerOnlySidebarImage1}
+            imageLink2x={BannerOnlySidebarImage1}
           />
         </BannerOnlyScrollbar>
       </InformationBanners>

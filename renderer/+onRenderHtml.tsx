@@ -24,20 +24,9 @@ async function onRenderHtml(pageContext) {
   const desc =
     (documentProps && documentProps.description) ||
     "Официальный сайт парк-отеля River&Fish. Отдых с семьей и друзьями в живописных местах: рыбалка, охота, прогулки по лесу, прокат лодок, услуги егеря и т.д. Комфортабельные домики, чистый воздух и единение с природой.";
-
-  const documentHtml = escapeInject`<!DOCTYPE html>
-    <html lang="ru">
-      <head>
-        <meta charset="UTF-8" />
-        <link rel="icon" href="${logoUrl}" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="${desc}" />
-        <meta property="og:description" content="${desc}" />
-        <meta property="og:title" content="${title}" />
-        <title>${title}</title>
-        <style type="text/css">${cssFonts}</style>
-        <style type="text/css">${globalStyles}</style>
-        <script type='text/javascript'>(function(w) {
+  const reservationScript =
+    pageContext.urlOriginal === "/"
+      ? `<script type='text/javascript'>(function(w) {
         var q = [
             ['setContext', 'TL-INT-riverfish-hotel_2025-01-21', 'ru'],
             ['embed', 'booking-form', {
@@ -61,7 +50,22 @@ async function onRenderHtml(pageContext) {
                 s.onerror=s.onload=e(s,function(){l(h.slice(1,h.length))});c.appendChild(s)
             })(h);
         }
-    })(window);</script>
+    })(window);</script>`
+      : "";
+
+  const documentHtml = escapeInject`<!DOCTYPE html>
+    <html lang="ru">
+      <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" href="${logoUrl}" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="${desc}" />
+        <meta property="og:description" content="${desc}" />
+        <meta property="og:title" content="${title}" />
+        <title>${title}</title>
+        <style type="text/css">${cssFonts}</style>
+        <style type="text/css">${globalStyles}</style>
+        ${dangerouslySkipEscape(reservationScript)}
       </head>
       <body>
         ${dangerouslySkipEscape(pageHtml)}

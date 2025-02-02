@@ -5,7 +5,8 @@ import { BannerOnlyScrollbarSlide } from "@components/banner-slide-only-scrollba
 import { InformationBanners } from "@components/Information-banners";
 import { InformationDescription } from "@components/information-description";
 import { Section } from "@components/section";
-import BannerHalfImage from "../assets/banner-half-1.webp";
+import BannerHalfImage1 from "../assets/banner-half-1.webp";
+import BannerHalfImage2 from "../assets/banner-half-2.webp";
 import BannerOnlySidebarImage1 from "../assets/banner-only-scrollbar-image-1.webp";
 import BannerOnlySidebarImage2 from "../assets/banner-only-scrollbar-image-2.webp";
 import BannerOnlySidebarImage3 from "../assets/banner-only-scrollbar-image-3.webp";
@@ -16,12 +17,12 @@ export const InformationBlock = () => {
       <InformationBanners>
         <BannerHalf>
           <BannerSlideHalf
-            imageLink1x={BannerHalfImage}
-            imageLink2x={BannerHalfImage}
+            imageLink1x={BannerHalfImage1}
+            imageLink2x={BannerHalfImage1}
           />
           <BannerSlideHalf
-            imageLink1x={BannerHalfImage}
-            imageLink2x={BannerHalfImage}
+            imageLink1x={BannerHalfImage2}
+            imageLink2x={BannerHalfImage2}
           />
         </BannerHalf>
         <InformationDescription
