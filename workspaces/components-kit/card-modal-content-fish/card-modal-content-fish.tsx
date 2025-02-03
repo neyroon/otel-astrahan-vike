@@ -58,6 +58,11 @@ export const CardModalContentFish = () => {
             </Typography>
             <SpanBold size="16-bold">18 000 ₽</SpanBold>
           </ListItem>
+          <ListItem>
+            <Typography size="16" opacity={70}>
+              Стоимость бензина оплачивается в конце дня отдельно
+            </Typography>
+          </ListItem>
         </List>
       </ListBlock>
 

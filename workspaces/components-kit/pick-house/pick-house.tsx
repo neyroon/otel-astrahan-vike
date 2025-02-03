@@ -33,6 +33,7 @@ export const PickHouse: FunctionalComponent<PickHouseProps> = ({
     title: "",
     description: "",
     imagelink: "",
+    square: "",
     ishouse: true,
   });
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -164,6 +165,7 @@ export const PickHouse: FunctionalComponent<PickHouseProps> = ({
             data-description="Дом 36 кв.м"
             data-imagelink={imageHouse}
             data-ishouse="true"
+            data-square="36"
           >
             <path
               d="M1721.26 471.709V475.035L1791.1 504.635L1792.1 493.66L1821.37 490.334L1821.03 487.341L1815.05 483.35L1795.76 435.458L1752.52 418.829L1721.26 471.709Z"
@@ -183,6 +185,7 @@ export const PickHouse: FunctionalComponent<PickHouseProps> = ({
             data-description="Дом 36 кв.м"
             data-imagelink={imageHouse}
             data-ishouse="true"
+            data-square="36"
           >
             <path
               d="M1497.77 474.702V477.696L1556.96 507.628L1557.63 496.32L1593.88 492.329L1592.88 489.669L1588.56 486.675L1565.28 438.118L1528.7 420.824L1497.77 474.702Z"
@@ -202,6 +205,7 @@ export const PickHouse: FunctionalComponent<PickHouseProps> = ({
             data-description="Дом 36 кв.м"
             data-imagelink={imageHouse}
             data-ishouse="true"
+            data-square="36"
           >
             <path
               d="M1281 477.546V480.872L1329.89 511.469V500.826L1372.13 495.838L1371.46 493.177L1367.47 490.184L1340.86 440.962L1310.93 424L1281 477.546Z"
@@ -221,6 +225,7 @@ export const PickHouse: FunctionalComponent<PickHouseProps> = ({
             data-description="Дом 36 кв.м"
             data-imagelink={imageHouse}
             data-ishouse="true"
+            data-square="36"
           >
             <path
               d="M1054 478.546V481.539L1090.92 512.136V502.159L1138.81 496.838V494.51L1136.48 491.849L1106.88 444.29L1106.22 442.294L1082.93 425L1054 478.546Z"
@@ -237,9 +242,10 @@ export const PickHouse: FunctionalComponent<PickHouseProps> = ({
           </g>
           <g
             data-title="Юрта-Хан"
-            data-description="Дом 36 кв.м с отдельной спальней"
+            data-description="Дом 48 кв.м с отдельной спальней"
             data-imagelink={imageHouse}
             data-ishouse="true"
+            data-square="48"
           >
             <path
               d="M1638.45 389.561V397.876L1695.32 420.824L1695.98 411.844L1724.25 409.849L1723.59 406.523L1719.26 404.528V397.211L1701.31 354.973L1666.05 343L1638.45 389.561Z"
@@ -256,9 +262,10 @@ export const PickHouse: FunctionalComponent<PickHouseProps> = ({
           </g>
           <g
             data-title="Юрта-Хан"
-            data-description="Дом 36 кв.м с отдельной спальней"
+            data-description="Дом 48 кв.м с отдельной спальней"
             data-imagelink={imageHouse}
             data-ishouse="true"
+            data-square="48"
           >
             <path
               d="M1449 392.561V401.541L1497.89 424.157V416.175L1530.48 412.516V410.188L1526.82 407.86V400.543L1506.2 357.973L1475.61 346L1449 392.561Z"
@@ -275,9 +282,10 @@ export const PickHouse: FunctionalComponent<PickHouseProps> = ({
           </g>
           <g
             data-title="Юрта-Хан"
-            data-description="Дом 36 кв.м с отдельной спальней"
+            data-description="Дом 48 кв.м с отдельной спальней"
             data-imagelink={imageHouse}
             data-ishouse="true"
+            data-square="48"
           >
             <path
               d="M1255 394.894V404.206L1295.57 426.489L1296.24 418.507L1333.49 415.182L1332.49 412.853L1329.83 410.525V403.209L1306.88 362.634L1305.89 360.638L1281.27 348L1255 394.894Z"
@@ -294,9 +302,10 @@ export const PickHouse: FunctionalComponent<PickHouseProps> = ({
           </g>
           <g
             data-title="Юрта-Хан"
-            data-description="Дом 36 кв.м с отдельной спальней"
+            data-description="Дом 48 кв.м с отдельной спальней"
             data-imagelink={imageHouse}
             data-ishouse="true"
+            data-square="48"
           >
             <path
               d="M1063 394.894V403.874L1094.93 426.489V419.173L1137.17 415.182L1136.5 412.853L1134.17 410.525V403.874L1107.9 360.306L1087.94 348L1063 394.894Z"

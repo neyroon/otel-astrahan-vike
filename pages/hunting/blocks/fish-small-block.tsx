@@ -5,8 +5,6 @@ import { Button } from "@foundation";
 import { styled } from "@linaria/react";
 import { breakpoints } from "@tokens";
 import cardFishSmall1 from "../assets/card-fish-image-1.webp";
-import cardFishSmall2 from "../assets/card-fish-image-2.webp";
-import cardFishSmall3 from "../assets/card-fish-image-3.webp";
 import cardFishSmall4 from "../assets/card-fish-image-4.webp";
 
 const StyledButton = styled(Button)`
@@ -32,24 +30,7 @@ export const FishSmallBlock = () => {
           bedrooms="Рыболовный гид"
           withButtons={false}
         />
-        <CardRoomBig
-          imageLink1x={cardFishSmall2}
-          imageLink2x={cardFishSmall2}
-          title="Владислав Капканов"
-          square="Охота"
-          peoples="Подводная охота"
-          bedrooms="Рыболовный гид"
-          withButtons={false}
-        />
-        <CardRoomBig
-          imageLink1x={cardFishSmall3}
-          imageLink2x={cardFishSmall3}
-          title="Сергей Охотников"
-          square="Охота"
-          peoples="Подводная охота"
-          bedrooms="Рыболовный гид"
-          withButtons={false}
-        />
+
         <CardRoomBig
           imageLink1x={cardFishSmall4}
           imageLink2x={cardFishSmall4}

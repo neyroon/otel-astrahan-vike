@@ -2,7 +2,8 @@ import { CardLayout } from "@components/card-layout";
 import { CardModalContentRooms } from "@components/card-modal-content-rooms";
 import { CardRoomBig } from "@components/card-room-big";
 import { Section } from "@components/section";
-import cardRoomsSmall1 from "../assets/card-rooms-big-1.webp";
+import cardRoomsSmall1 from "../assets/card-rooms-small-1.webp";
+import cardRoomsSmall2 from "../assets/card-rooms-small-2.webp";
 import houseImage1 from "../assets/house-1.webp";
 import houseImage2 from "../assets/house-2.webp";
 import houseImage3 from "../assets/house-3.webp";
@@ -25,86 +26,38 @@ export const RoomsSmallBlock = () => {
         <CardRoomBig
           imageLink1x={cardRoomsSmall1}
           imageLink2x={cardRoomsSmall1}
-          title="Номер 1"
+          title="Номер Плавучего дома 1"
           square="Площадь: 36 м²"
-          peoples="2-5 человек"
-          bedrooms="1 спальни"
+          peoples="2 человека"
+          bedrooms="1 спальня"
           lounge="1 гостиная"
-          doubleBed="1 двуспальная кровать"
+          doubleBed="2 двуспальных кровати"
           sofaBed="1 диван-кровать"
           {...modalProps}
         >
-          <CardModalContentRooms />
+          <CardModalContentRooms
+            title="Номер Плавучего дома 1"
+            description=""
+            price="3000 ₽"
+          />
         </CardRoomBig>
         <CardRoomBig
-          imageLink1x={cardRoomsSmall1}
-          imageLink2x={cardRoomsSmall1}
-          title="Номер 2"
+          imageLink1x={cardRoomsSmall2}
+          imageLink2x={cardRoomsSmall2}
+          title="Номер Плавучего дома 2"
           square="Площадь: 46 м²"
-          peoples="2-5 человек"
-          bedrooms="1 спальни"
+          peoples="2 человека"
+          bedrooms="1 спальня"
           lounge="1 гостиная"
-          doubleBed="1 двуспальная кровать"
+          doubleBed="2 двуспальных кровати"
           sofaBed="1 диван-кровать"
           {...modalProps}
         >
-          <CardModalContentRooms />
-        </CardRoomBig>
-        <CardRoomBig
-          imageLink1x={cardRoomsSmall1}
-          imageLink2x={cardRoomsSmall1}
-          title="Номер 3"
-          square="Площадь: 46 м²"
-          peoples="2-5 человек"
-          bedrooms="1 спальни"
-          lounge="1 гостиная"
-          doubleBed="1 двуспальная кровать"
-          sofaBed="1 диван-кровать"
-          {...modalProps}
-        >
-          <CardModalContentRooms />
-        </CardRoomBig>
-        <CardRoomBig
-          imageLink1x={cardRoomsSmall1}
-          imageLink2x={cardRoomsSmall1}
-          title="Номер 4"
-          square="Площадь: 36 м²"
-          peoples="2-5 человек"
-          bedrooms="1 спальни"
-          lounge="1 гостиная"
-          doubleBed="1 двуспальная кровать"
-          sofaBed="1 диван-кровать"
-          {...modalProps}
-        >
-          <CardModalContentRooms />
-        </CardRoomBig>
-        <CardRoomBig
-          imageLink1x={cardRoomsSmall1}
-          imageLink2x={cardRoomsSmall1}
-          title="Номер 5"
-          square="Площадь: 46 м²"
-          peoples="2-5 человек"
-          bedrooms="1 спальни"
-          lounge="1 гостиная"
-          doubleBed="1 двуспальная кровать"
-          sofaBed="1 диван-кровать"
-          {...modalProps}
-        >
-          <CardModalContentRooms />
-        </CardRoomBig>
-        <CardRoomBig
-          imageLink1x={cardRoomsSmall1}
-          imageLink2x={cardRoomsSmall1}
-          title="Номер 6"
-          square="Площадь: 46 м²"
-          peoples="2-5 человек"
-          bedrooms="1 спальни"
-          lounge="1 гостиная"
-          doubleBed="1 двуспальная кровать"
-          sofaBed="1 диван-кровать"
-          {...modalProps}
-        >
-          <CardModalContentRooms />
+          <CardModalContentRooms
+            title="Номер Плавучего дома 2"
+            description=""
+            price="3000 ₽"
+          />
         </CardRoomBig>
       </CardLayout>
     </Section>

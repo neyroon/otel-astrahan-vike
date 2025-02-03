@@ -21,6 +21,7 @@ interface CardHouseProps {
   description?: string;
   imagelink: string;
   isHovered?: boolean;
+  square?: string;
   ishouse: boolean;
   mouseCoordsHouse?: { pageX: number; pageY: number };
   onClose?: () => void;
@@ -29,6 +30,7 @@ interface CardHouseProps {
 export const CardHouse: FunctionalComponent<CardHouseProps> = ({
   title,
   description,
+  square,
   imagelink,
   isHovered,
   ishouse,
@@ -59,7 +61,7 @@ export const CardHouse: FunctionalComponent<CardHouseProps> = ({
         {ishouse && (
           <InfoLayout>
             <InfoBox>
-              <Title size="15">Площадь: 48 м²</Title>
+              <Title size="15">Площадь: {square} м²</Title>
             </InfoBox>
             <InfoBox>
               <Description size="15">Гости: 4-5</Description>
