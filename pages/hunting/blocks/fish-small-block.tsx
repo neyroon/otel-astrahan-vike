@@ -19,7 +19,7 @@ const StyledButton = styled(Button)`
 
 export const FishSmallBlock = () => {
   return (
-    <Section title="Номера гиды" backgroundColor="dark-gray">
+    <Section title="Наши гиды" backgroundColor="dark-gray">
       <CardLayout variant="m">
         <CardRoomBig
           imageLink1x={cardFishSmall1}
