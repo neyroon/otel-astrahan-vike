@@ -37,7 +37,7 @@ export const FishSmallBlock = () => {
           title="Игорь Сафонов"
           square="Охота"
           peoples="Подводная охота"
-          bedrooms="Рыболовный гид"
+          bedrooms="Рыболовный гид "
           withButtons={false}
         />
       </CardLayout>
