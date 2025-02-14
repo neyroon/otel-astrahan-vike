@@ -1,5 +1,5 @@
 import { Breadcrumbs } from "@components/breadcrumbs";
-import breadcrumbsImage1x from "../assets/breadcrumbs-image.webp";
+import breadcrumbsImage1x from "../../fishing/assets/water.webp";
 
 export const BreadcrumbsBlock = () => {
   return (

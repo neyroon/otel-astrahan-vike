@@ -122,6 +122,7 @@ export const IconBox = styled.a`
     width: 44px;
   }
 `;
+
 export const PhoneBox = styled.div`
   display: flex;
   flex-direction: column;

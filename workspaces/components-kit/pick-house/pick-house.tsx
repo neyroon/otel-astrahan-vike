@@ -6,6 +6,8 @@ import imageBath from "./assets/bath-image.webp";
 import imageHouse from "./assets/house-image.webp";
 import imageHouseboat from "./assets/houseboat-image.webp";
 import playgroundImage from "./assets/playground-image.webp";
+import alcoveImage from "./assets/alcove-image.webp";
+import alcoveBigImage from "./assets/alcove-image-big.webp";
 import imagePool from "./assets/pool-image.webp";
 import imageRestaurant from "./assets/restaurant-image.webp";
 import { CardHouse } from "./card-house";
@@ -402,13 +404,98 @@ export const PickHouse: FunctionalComponent<PickHouseProps> = ({
             data-imagelink={playgroundImage}
           >
             <path
-              d="M568.169 746.058C633.621 765.134 671.804 773.289 741.777 784.637C826.849 769.249 843.206 749.657 808.959 692.512C767.372 668.626 741.185 660.993 686.901 662.58C639.249 663.251 612.4 668.934 564.178 692.512C534.774 714.061 530.535 725.889 568.169 746.058Z"
+              xmlns="http://www.w3.org/2000/svg"
+              d="M644 739C704.5 764.5 675.5 753 741 775C803 726 831 734.5 827.5 696C796.5 671.2 775.151 670.614 720.867 672.2C673.215 672.872 646.366 678.555 598.144 702.133C568.74 723.682 606.365 718.832 644 739Z"
               fill="white"
               stroke="white"
             />
             <circle
               cx="714.173"
               cy="718.121"
+              r="4.32131"
+              fill="#636A25"
+              stroke="white"
+              stroke-width="2"
+            />
+          </g>
+          <g
+            data-title="Беседка"
+            data-description=""
+            data-imagelink={alcoveImage}
+          >
+            <path
+              xmlns="http://www.w3.org/2000/svg"
+              d="M621 802.5L669 801L678.54 783L675 760V759H669L627 760L623 767.5L617.5 778.5L618 782.5L618 785.516L618.5 790L618.5 795.5L620.5 800.5L621 802.5Z"
+              fill="white"
+              stroke="white"
+            />
+            <circle
+              xmlns="http://www.w3.org/2000/svg"
+              cx="648.321"
+              cy="780.321"
+              r="4.32131"
+              fill="#636A25"
+              stroke="white"
+              stroke-width="2"
+            />
+          </g>
+          <g
+            data-title="Беседка"
+            data-description=""
+            data-imagelink={alcoveImage}
+          >
+            <path
+              xmlns="http://www.w3.org/2000/svg"
+              d="M772.5 798.5L820.5 797L830.04 779L826.5 756V755H820.5L778.5 756L774.5 763.5L769 774.5L769.5 778.5L769.5 781.516L770 786L770 791.5L772 796.5L772.5 798.5Z"
+              fill="white"
+              stroke="white"
+            />
+            <circle
+              xmlns="http://www.w3.org/2000/svg"
+              cx="800.321"
+              cy="777.321"
+              r="4.32131"
+              fill="#636A25"
+              stroke="white"
+              stroke-width="2"
+            />
+          </g>
+          <g
+            data-title="Беседка"
+            data-description=""
+            data-imagelink={alcoveImage}
+          >
+            <path
+              xmlns="http://www.w3.org/2000/svg"
+              d="M1893.5 695.5L1945.5 688.5L1947 677L1948.5 669L1938.5 662L1923.5 655L1903.5 657L1887.5 660.5V665.5L1885 680.5L1889.5 682.5L1891 683L1891 688.5L1893 693.5L1893.5 695.5Z"
+              fill="white"
+              stroke="white"
+            />
+            <circle
+              xmlns="http://www.w3.org/2000/svg"
+              cx="1917.32"
+              cy="674.321"
+              r="4.32131"
+              fill="#636A25"
+              stroke="white"
+              stroke-width="2"
+            />
+          </g>
+          <g
+            data-title="Беседка большая"
+            data-description=""
+            data-imagelink={alcoveBigImage}
+          >
+            <path
+              xmlns="http://www.w3.org/2000/svg"
+              d="M899 1069L965.5 1014.5L968 983V936.5V931H945.65L833.2 933.46L827.343 957L825 978.966L826.171 988.805L826.171 996.224L818.5 1018L821 1040.5V1069H899Z"
+              fill="white"
+              stroke="white"
+            />
+            <circle
+              xmlns="http://www.w3.org/2000/svg"
+              cx="892.321"
+              cy="1000.32"
               r="4.32131"
               fill="#636A25"
               stroke="white"

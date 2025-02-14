@@ -27,12 +27,10 @@ export const RoomsSmallBlock = () => {
           imageLink1x={cardRoomsSmall1}
           imageLink2x={cardRoomsSmall1}
           title="Номер Плавучего дома 1"
-          square="Площадь: 36 м²"
+          square="Площадь: 10 м²"
           peoples="2 человека"
-          bedrooms="1 спальня"
-          lounge="1 гостиная"
-          doubleBed="2 двуспальных кровати"
-          sofaBed="1 диван-кровать"
+          bedrooms="2 односпальных кровати"
+          lounge="Кондиционер"
           {...modalProps}
         >
           <CardModalContentRooms
@@ -45,12 +43,10 @@ export const RoomsSmallBlock = () => {
           imageLink1x={cardRoomsSmall2}
           imageLink2x={cardRoomsSmall2}
           title="Номер Плавучего дома 2"
-          square="Площадь: 46 м²"
+          square="Площадь: 10 м²"
           peoples="2 человека"
-          bedrooms="1 спальня"
-          lounge="1 гостиная"
-          doubleBed="2 двуспальных кровати"
-          sofaBed="1 диван-кровать"
+          bedrooms="2 односпальных кровати"
+          lounge="Кондиционер"
           {...modalProps}
         >
           <CardModalContentRooms

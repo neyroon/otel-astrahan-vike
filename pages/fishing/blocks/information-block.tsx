@@ -33,20 +33,8 @@ export const InformationBlock = () => {
         />
         <BannerOnlyScrollbar>
           <BannerOnlyScrollbarSlide
-            imageLink1x={BannerOnlySidebarImage2}
-            imageLink2x={BannerOnlySidebarImage2}
-          />
-          <BannerOnlyScrollbarSlide
-            imageLink1x={BannerOnlySidebarImage3}
-            imageLink2x={BannerOnlySidebarImage3}
-          />
-          <BannerOnlyScrollbarSlide
             imageLink1x={BannerOnlySidebarImage4}
             imageLink2x={BannerOnlySidebarImage4}
-          />
-          <BannerOnlyScrollbarSlide
-            imageLink1x={BannerOnlySidebarImage1}
-            imageLink2x={BannerOnlySidebarImage1}
           />
         </BannerOnlyScrollbar>
       </InformationBanners>

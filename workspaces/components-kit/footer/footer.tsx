@@ -166,12 +166,7 @@ export const Footer = () => {
           >
             <VkIcon />
           </IconBox>
-          <IconBox
-            href="https://www.instagram.com/riverfish.hotel?igsh=YzZvbjlsNXloMW9h"
-            aria-label="Ссылка на instagram"
-          >
-            <InstagramIcon />
-          </IconBox>
+
           <IconBox
             href="https://rutube.ru/channel/50338961/"
             aria-label="Ссылка на rutube"

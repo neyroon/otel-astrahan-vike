@@ -18,7 +18,7 @@ interface CardRoomBigProps {
   description?: string;
   square: string;
   peoples: string;
-  bedrooms: string;
+  bedrooms?: string;
   lounge?: string;
   doubleBed?: string;
   sofaBed?: string;
@@ -77,9 +77,11 @@ export const CardRoomBig: FunctionComponent<CardRoomBigProps> = ({
           <InfoBox>
             <Typography size="15">{peoples}</Typography>
           </InfoBox>
-          <InfoBox>
-            <Typography size="15">{bedrooms}</Typography>
-          </InfoBox>
+          {bedrooms && (
+            <InfoBox>
+              <Typography size="15">{bedrooms}</Typography>
+            </InfoBox>
+          )}
           {lounge && (
             <InfoBox>
               <Typography size="15">{lounge}</Typography>

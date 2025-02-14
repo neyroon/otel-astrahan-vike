@@ -264,3 +264,25 @@ export const Social = styled.a`
   gap: 14px;
   width: calc(50% - 7px);
 `;
+
+export const IconBox = styled.a`
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: ${allColors.DARK_GRAY};
+  border-radius: 12px;
+
+  &:hover {
+    background-color: ${allColors.COLUMBIA_BLUE};
+  }
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
+    width: 44px;
+  }
+`;

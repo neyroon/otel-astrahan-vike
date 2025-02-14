@@ -12,7 +12,14 @@ import houseImage5 from "../assets/house-5.webp";
 import houseImage6 from "../assets/house-6.webp";
 
 export const RoomsBigBlock = () => {
-  const modalProps = {
+  const modalBiiProps = {
+    modalImageLink1: houseImage1,
+    modalImageLink2: houseImage2,
+    modalImageLink4: houseImage4,
+    modalImageLink5: houseImage5,
+    modalImageLink6: houseImage6,
+  };
+  const modalHanProps = {
     modalImageLink1: houseImage1,
     modalImageLink2: houseImage2,
     modalImageLink3: houseImage3,
@@ -30,11 +37,10 @@ export const RoomsBigBlock = () => {
           description="Дом 36 кв.м вмешает 4х взpocлых и 1 peбeнка. Нoвый дoм на бepегу Волги в Aстpаxани на территoрии cвeжeпоcтpоенногo эко-отeля River&Fish приглашает любитeлей увлекaтeльнoй pыбалки, oхоты и отдыха в компании друзей и близких!"
           square="Площадь: 36 м² "
           peoples="2-5 человека"
-          bedrooms="1 спальня"
           lounge="1 гостиная"
           sofaBed="1 диван-кровать"
           doubleBed="1 двуспальная кровать"
-          {...modalProps}
+          {...modalBiiProps}
         >
           <CardModalContentRooms
             title="Юрта-Бий"
@@ -85,7 +91,7 @@ export const RoomsBigBlock = () => {
           lounge="1 гостиная"
           doubleBed="1 двуспальная кровать"
           sofaBed="1 диван-кровать"
-          {...modalProps}
+          {...modalHanProps}
         >
           <CardModalContentRooms
             title="Юрта-Хан"

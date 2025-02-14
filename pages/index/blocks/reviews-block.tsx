@@ -22,64 +22,34 @@ export const ReviewsBlock = () => {
     >
       <CardReviewLayout>
         <CardReview
-          date="07 / 03 / 2024"
+          date="07 / 03 / 2025"
           houseName="Юрта-Хан"
           fullName="Иванова Валерия"
           grade={5}
           firstImageLink={cardReview1}
           secondImageLink={cardReview2}
           thirdImageLink={cardReview3}
-          review="Провели в данном месте производственный корпоратив. Все понравилось. За свою цену, отличный отель, дружелюбный персонал."
+          review="Приехали на техническое открытие, многое было еще в процессе постройки, но команда отеля сделала буквально все, чтобы нам понравился отдыха. От уборки домика два раза за день, до романтического ужина при свечах в лодке) Ждем полноценное открытие"
         />
         <CardReview
-          date="07 / 03 / 2024"
+          date="07 / 03 / 2025"
           houseName="Юрта-бий"
-          fullName="Иванова Валерия"
+          fullName="Никифоров Евгений"
           grade={5}
           firstImageLink={cardReview4}
           secondImageLink={cardReview5}
           thirdImageLink={cardReview6}
-          review="Провели в данном месте производственный корпоратив. Все понравилось."
+          review="Все супер, порыбачили от души с братом и племянником. Теплая еда в дорогу, веселый егерь Михаил и тонна рыбы домой"
         />
         <CardReview
-          date="07 / 03 / 2024"
+          date="07 / 03 / 2025"
           houseName="Юрта-Хан"
-          fullName="Иванова Валерия"
+          fullName="Некрасова Анна"
           grade={5}
           firstImageLink={cardReview7}
           secondImageLink={cardReview8}
           thirdImageLink={cardReview9}
-          review="Все понравилось, главное детям было весело, для них очень много развлечений. Номер брали 2-х комнатный люкс, достаточно просторный плюс принесли раскладушку. Еда хорошая, есть из чего выбрать, алкоголь в достатке."
-        />
-        <CardReview
-          date="07 / 03 / 2024"
-          houseName="Юрта-бий"
-          fullName="Иванова Валерия"
-          grade={5}
-          firstImageLink={cardReview1}
-          secondImageLink={cardReview2}
-          thirdImageLink={cardReview3}
-          review="Провели в данном месте производственный корпоратив. Все понравилось. За свою цену, отличный отель, дружелюбный персонал."
-        />
-        <CardReview
-          date="07 / 03 / 2024"
-          houseName="Юрта-Хан"
-          fullName="Иванова Валерия"
-          grade={5}
-          firstImageLink={cardReview4}
-          secondImageLink={cardReview5}
-          thirdImageLink={cardReview6}
-          review="Провели в данном месте производственный корпоратив. Все понравилось."
-        />
-        <CardReview
-          date="07 / 03 / 2024"
-          houseName="Юрта-Хан"
-          fullName="Иванова Валерия"
-          grade={5}
-          firstImageLink={cardReview7}
-          secondImageLink={cardReview8}
-          thirdImageLink={cardReview9}
-          review="Все понравилось, главное детям было весело, для них очень много развлечений. Номер брали 2-х комнатный люкс, достаточно просторный плюс принесли раскладушку. Еда хорошая, есть из чего выбрать, алкоголь в достатке."
+          review="Домики супер, ресторан очень вкусный, от Астрахани доехали за 40 минут с остановкой на пикник. Можно пришвартовать свою лодку. В следующий раз так и сделаем."
         />
       </CardReviewLayout>
     </Section>

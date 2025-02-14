@@ -41,7 +41,7 @@ export const FishSmallBlock = () => {
           withButtons={false}
         />
       </CardLayout>
-      <StyledButton>Хочу порыбачить</StyledButton>
+      <StyledButton>Хочу поохотиться</StyledButton>
     </Section>
   );
 };

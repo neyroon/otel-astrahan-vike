@@ -42,21 +42,9 @@ export const CardModalContentFish = () => {
         <List>
           <ListItem>
             <Typography size="16" opacity={70}>
-              Аренда на 1 час:
-            </Typography>
-            <SpanBold size="16-bold">5 000 ₽</SpanBold>
-          </ListItem>
-          <ListItem>
-            <Typography size="16" opacity={70}>
-              Аренда на 2 часа:
+              Световой день (8 часов) + бензин:
             </Typography>
             <SpanBold size="16-bold">9 000 ₽</SpanBold>
-          </ListItem>
-          <ListItem>
-            <Typography size="16" opacity={70}>
-              Цена на 1 сутки:
-            </Typography>
-            <SpanBold size="16-bold">18 000 ₽</SpanBold>
           </ListItem>
           <ListItem>
             <Typography size="16" opacity={70}>

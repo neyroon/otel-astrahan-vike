@@ -9,10 +9,6 @@ export const SpecialBlock = () => {
     <Section title="Спецпредложения" backgroundColor="dark-gray">
       <BannerSpecial>
         <BannerSlideSpecial
-          imageLink1x={houseSpecial1}
-          imageLink2x={houseSpecial1}
-        />
-        <BannerSlideSpecial
           imageLink1x={houseSpecial2}
           imageLink2x={houseSpecial2}
         />

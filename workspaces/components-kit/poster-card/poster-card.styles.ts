@@ -39,6 +39,10 @@ export const DateText = styled(Typography)`
 export const Title = styled(Typography)`
   z-index: 1;
   margin-bottom: 8px;
+
+  span {
+    text-transform: uppercase;
+  }
 `;
 
 export const Description = styled(Typography)`

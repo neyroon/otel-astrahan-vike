@@ -19,3 +19,4 @@ export { TelegramIcon } from "./telegram";
 export { TimeIcon } from "./time";
 export { ViberIcon } from "./viber";
 export { VkIcon } from "./vk";
+export { WhatsappIcon } from "./whatsapp";

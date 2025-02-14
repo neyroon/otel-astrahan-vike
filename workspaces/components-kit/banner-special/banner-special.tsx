@@ -16,33 +16,11 @@ export const BannerSpecial: FunctionComponent = ({ children }) => {
 
   return (
     <BannerBox>
-      <Swiper
-        spaceBetween={16}
-        loop
-        pagination={{ type: "bullets" }}
-        speed={700}
-        modules={[Pagination]}
-        breakpoints={{ 1024: { pagination: { type: "fraction" } } }}
-        ref={sliderRef}
-      >
+      <Swiper spaceBetween={16} loop speed={700} ref={sliderRef}>
         {elements.map((el) => (
           <SwiperSlide>{el}</SwiperSlide>
         ))}
       </Swiper>
-      <ButtonBox>
-        <ButtonNavigation
-          aria-label="Навигация влево"
-          onClick={onButtonPrevClick}
-        >
-          <ArrowLeftIcon />
-        </ButtonNavigation>
-        <ButtonNavigation
-          aria-label="Навигация вправо"
-          onClick={onButtonNextClick}
-        >
-          <ArrowRightIcon />
-        </ButtonNavigation>
-      </ButtonBox>
     </BannerBox>
   );
 };

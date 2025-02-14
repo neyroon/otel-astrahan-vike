@@ -22,10 +22,12 @@ export const BoatsSmallBlock = () => {
           imageLink1x={cardBoatImage1}
           imageLink2x={cardBoatImage1}
           title="Волжанка 46 Fish"
-          square="Длина: 4,96 м"
-          peoples="Ширина: 1,94 м"
-          bedrooms="Вес: 350 кг"
-          lounge="Грузоподъемность: 485кг "
+          square="Эхалот"
+          peoples="5 посадочных мест"
+          bedrooms="Спасательные жилеты"
+          lounge="Стойки для спиннингов"
+          doubleBed="Защитный тент от солнца"
+          sofaBed="Год выпуска 2024"
           button1text="Связаться с администратором"
           button1Href="tel:+79208953030"
           {...modalProps}

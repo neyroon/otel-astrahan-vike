@@ -7,12 +7,14 @@ import {
   PhoneIcon,
   RutubeIcon,
   VkIcon,
+  WhatsappIcon,
 } from "../../foundation-kit/icons";
 import {
   Contact,
   Contacts,
   HeaderBox,
   HeaderContainer,
+  IconBox,
   LogotypeLink,
   MenuButton,
   MenuItem,
@@ -93,6 +95,12 @@ export const Header: FunctionComponent = () => {
                 +7 920 895 30 30
               </Phone>
             </PhoneBox>
+            <IconBox
+              href="https://wa.me/+79208953030"
+              aria-label="Ссылка на whatsapp"
+            >
+              <WhatsappIcon />
+            </IconBox>
             <StyledButton size="s">Забронировать</StyledButton>
             <MenuButton aria-label="Меню" onClick={handleMenuButtonClick}>
               <MenuItemContainer>
