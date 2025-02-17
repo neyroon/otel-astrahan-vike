@@ -70,3 +70,9 @@ export const GradientBox = styled.div`
   bottom: 0;
   background: rgba(0, 0, 0, 0.6);
 `;
+
+export const LineThough = styled(Typography)`
+  text-decoration: line-through;
+  margin: 10px;
+  text-decoration-color: red;
+`;

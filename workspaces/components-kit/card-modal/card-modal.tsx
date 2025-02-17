@@ -24,10 +24,12 @@ interface CardModal {
   imageLink4: string;
   imageLink5?: string;
   imageLink6?: string;
+  className?: string;
 }
 
 export const CardModal: FunctionalComponent<CardModal> = ({
   children,
+  className,
   ...rest
 }) => {
   const imageLinks = [
@@ -46,7 +48,7 @@ export const CardModal: FunctionalComponent<CardModal> = ({
   const onButtonNextClick = () => sliderRef.current.swiper.slideNext();
 
   return (
-    <CardModalBox>
+    <CardModalBox className={className}>
       <SwiperBox>
         {!isMobile && (
           <SwiperThumbs>

@@ -16,7 +16,7 @@ function Page() {
       <BreadcrumbsBlock />
       <RoomsBigBlock />
       <BannerStaticBlock />
-      <RoomsSmallBlock />
+      {/* <RoomsSmallBlock /> */}
       <AdressBlock />
       <ReviewsBlock />
       <FooterBlock />

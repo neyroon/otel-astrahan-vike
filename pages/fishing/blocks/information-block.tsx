@@ -9,7 +9,6 @@ import BannerHalfImage1 from "../assets/banner-half-1.webp";
 import BannerOnlySidebarImage1 from "../assets/banner-only-scrollbar-image-1.webp";
 import BannerOnlySidebarImage2 from "../assets/banner-only-scrollbar-image-2.webp";
 import BannerOnlySidebarImage3 from "../assets/banner-only-scrollbar-image-3.webp";
-import BannerOnlySidebarImage4 from "../assets/banner-only-scrollbar-image-4.webp";
 import BannerHalfImage2 from "../assets/banner-only-scrollbar-image-5.webp";
 
 export const InformationBlock = () => {
@@ -33,8 +32,16 @@ export const InformationBlock = () => {
         />
         <BannerOnlyScrollbar>
           <BannerOnlyScrollbarSlide
-            imageLink1x={BannerOnlySidebarImage4}
-            imageLink2x={BannerOnlySidebarImage4}
+            imageLink1x={BannerOnlySidebarImage1}
+            imageLink2x={BannerOnlySidebarImage1}
+          />
+          <BannerOnlyScrollbarSlide
+            imageLink1x={BannerOnlySidebarImage2}
+            imageLink2x={BannerOnlySidebarImage2}
+          />
+          <BannerOnlyScrollbarSlide
+            imageLink1x={BannerOnlySidebarImage3}
+            imageLink2x={BannerOnlySidebarImage3}
           />
         </BannerOnlyScrollbar>
       </InformationBanners>

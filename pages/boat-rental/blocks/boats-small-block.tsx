@@ -7,6 +7,14 @@ import fishImage1 from "../assets/fish-image-1.webp";
 import fishImage2 from "../assets/fish-image-2.webp";
 import fishImage3 from "../assets/fish-image-3.webp";
 import fishImage4 from "../assets/fish-image-4.webp";
+import { CardModal } from "@components/card-modal";
+import { styled } from "@linaria/react";
+
+const StyledCardModal = styled(CardModal)`
+  height: 100%;
+  max-height: none;
+  overflow: auto;
+`;
 
 export const BoatsSmallBlock = () => {
   const modalProps = {
@@ -17,24 +25,14 @@ export const BoatsSmallBlock = () => {
   };
   return (
     <Section backgroundColor="dark-gray" doublePaddingTop>
-      <CardLayout variant="m">
-        <CardRoomBig
-          imageLink1x={cardBoatImage1}
-          imageLink2x={cardBoatImage1}
-          title="Волжанка 46 Fish"
-          square="Эхалот"
-          peoples="5 посадочных мест"
-          bedrooms="Спасательные жилеты"
-          lounge="Стойки для спиннингов"
-          doubleBed="Защитный тент от солнца"
-          sofaBed="Год выпуска 2024"
-          button1text="Связаться с администратором"
-          button1Href="tel:+79208953030"
-          {...modalProps}
-        >
-          <CardModalContentFish />
-        </CardRoomBig>
-      </CardLayout>
+      <StyledCardModal
+        imageLink1={modalProps.modalImageLink1}
+        imageLink2={modalProps.modalImageLink2}
+        imageLink3={modalProps.modalImageLink3}
+        imageLink4={modalProps.modalImageLink4}
+      >
+        <CardModalContentFish />
+      </StyledCardModal>
     </Section>
   );
 };
