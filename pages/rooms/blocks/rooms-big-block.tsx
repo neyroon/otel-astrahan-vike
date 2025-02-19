@@ -14,7 +14,6 @@ import houseImage6 from "../assets/house-6.webp";
 export const RoomsBigBlock = () => {
   const modalBiiProps = {
     modalImageLink1: houseImage1,
-    modalImageLink2: houseImage2,
     modalImageLink4: houseImage4,
     modalImageLink5: houseImage5,
     modalImageLink6: houseImage6,
