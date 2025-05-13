@@ -105,7 +105,7 @@ export const BannerSlideFull: FunctionComponent<BannerSlideFullProps> = ({
             </FeatureTextBox>
           </FeatureContainer>
         </FeaturesBox>
-        <StyledButton>Забронировать номер</StyledButton>
+        <StyledButton>Забронировать номер </StyledButton>
       </CardBox>
     </BannerSlideBox>
   );
