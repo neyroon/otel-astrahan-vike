@@ -38,7 +38,7 @@ export const CardModalContentFish = () => {
         </List>
       </ListBlock>
       <ListBlock>
-        <MiddleText size="16">Стоимость аренды</MiddleText>
+        <MiddleText size="16">Стоимость аренды </MiddleText>
         <List>
           <ListItem>
             <Typography size="16" opacity={70}>
