@@ -76,7 +76,7 @@ export const RoomsBigBlock = () => {
                 транспорт для охоты."
               </>
             }
-            price="10 000"
+            price="7 000"
           />
         </CardRoomBig>
         <CardRoomBig
@@ -127,7 +127,7 @@ export const RoomsBigBlock = () => {
                 транспорт для охоты."
               </>
             }
-            price="12 500"
+            price="9 500"
           />
         </CardRoomBig>
       </CardLayout>
