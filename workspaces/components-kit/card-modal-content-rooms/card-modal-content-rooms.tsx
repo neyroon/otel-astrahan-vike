@@ -36,7 +36,7 @@ export const CardModalContentRooms: FunctionalComponent<
         </Typography>
       </TopTextBox>
       <ListBlock>
-        <MiddleText size="16">Удобства номера</MiddleText>
+        <MiddleText size="16">Удобства номера </MiddleText>
         <List>
           {listItems.map((text) => (
             <ListItem>
