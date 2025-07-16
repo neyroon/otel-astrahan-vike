@@ -5,8 +5,8 @@ import { Reservation } from "@components/reservation";
 import { Section } from "@components/section";
 import { styled } from "@linaria/react";
 import { breakpoints } from "@tokens";
-import houseImg1 from "../assets/house1.webp";
-import houseImg2 from "../assets/house2.webp";
+import video1Poster from "../assets/1-poster.webp";
+import video1MP4 from "../assets/1.mp4";
 
 const StyledSection = styled(Section)`
   padding-top: 20px;
@@ -21,8 +21,7 @@ export const ReservationBlock = () => {
     <StyledSection backgroundColor="dark-gray">
       <Group>
         <Banner>
-          <BannerSlide imageLink1x={houseImg1} imageLink2x={houseImg1} />
-          <BannerSlide imageLink1x={houseImg2} imageLink2x={houseImg2} />
+          <BannerSlide videoSrcMP4={video1MP4} poster={video1Poster} />
         </Banner>
         <Reservation />
       </Group>

@@ -13,7 +13,7 @@ export const ReservationBox = styled.div`
   flex-shrink: 0;
   border-radius: 28px;
   text-align: center;
-  z-index: 1;
+  z-index: 10;
   scroll-margin-top: 123px;
 
   @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {

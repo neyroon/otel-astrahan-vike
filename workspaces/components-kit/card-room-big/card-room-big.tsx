@@ -1,4 +1,4 @@
-import { CardModal } from "@components/card-modal";
+import { CardModalRooms } from "@components/card-modal-rooms";
 import { Button, Modal, Typography } from "@foundation";
 import { FunctionComponent } from "preact";
 import { useState } from "preact/hooks";
@@ -32,6 +32,8 @@ interface CardRoomBigProps {
   modalImageLink4?: string;
   modalImageLink5?: string;
   modalImageLink6?: string;
+  videoPreviewLink?: string;
+  videoLink?: string;
 }
 
 export const CardRoomBig: FunctionComponent<CardRoomBigProps> = ({
@@ -117,16 +119,18 @@ export const CardRoomBig: FunctionComponent<CardRoomBigProps> = ({
       </Content>
       {isModalOpen && (
         <Modal isOpen={isModalOpen} onClose={handleModalClose}>
-          <CardModal
+          <CardModalRooms
             imageLink1={props.modalImageLink1}
             imageLink2={props.modalImageLink2}
             imageLink3={props.modalImageLink3}
             imageLink4={props.modalImageLink4}
             imageLink5={props.modalImageLink5}
             imageLink6={props.modalImageLink6}
+            videoLink={props.videoLink}
+            videoPreviewLink={props.videoPreviewLink}
           >
             {children}
-          </CardModal>
+          </CardModalRooms>
         </Modal>
       )}
     </CardRoomBigBox>

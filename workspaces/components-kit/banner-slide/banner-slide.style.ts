@@ -1,7 +1,6 @@
 import { Typography } from "@foundation";
 import { styled } from "@linaria/react";
 import { breakpoints } from "@tokens";
-import { Image } from "../../foundation-kit/image";
 
 export const BannerSlideBox = styled.div`
   display: flex;
@@ -17,16 +16,14 @@ export const BannerSlideBox = styled.div`
   }
 `;
 
-export const StyledImage = styled(Image)`
+export const StyledVideo = styled.video`
   height: 100%;
   width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
 
-  & img {
-    border-radius: 16px;
-
-    @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
-      border-radius: 28px;
-    }
+  @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
+    border-radius: 28px;
   }
 `;
 
@@ -72,13 +69,14 @@ export const GradientBox = styled.div`
     rgba(0, 0, 0, 0.8) 53.42%
   );
 
-  border-radius: 28px;
+  border-radius: 16px;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
 
   @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
+    border-radius: 28px;
     background: linear-gradient(
         124.78deg,
         rgba(10, 5, 36, 0) 43.66%,

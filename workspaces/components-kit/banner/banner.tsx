@@ -1,24 +1,19 @@
-import { ArrowLeftIcon, ArrowRightIcon, ButtonNavigation } from "@foundation";
-import { FunctionComponent, toChildArray } from "preact";
-import { useRef } from "preact/hooks";
-import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
-import { Swiper, SwiperRef, SwiperSlide } from "swiper/react";
-import { BannerBox, ButtonBox } from "./banner-styles";
+import { FunctionComponent } from "preact";
+import { BannerBox } from "./banner-styles";
 
 export interface BannerProps {}
 
 export const Banner: FunctionComponent<BannerProps> = ({ children }) => {
-  const sliderRef = useRef<SwiperRef | null>(null);
-  const elements = toChildArray(children);
+  // const sliderRef = useRef<SwiperRef | null>(null);
+  // const elements = toChildArray(children);
 
-  const onButtonPrevClick = () => sliderRef.current.swiper.slidePrev();
-  const onButtonNextClick = () => sliderRef.current.swiper.slideNext();
+  // const onButtonPrevClick = () => sliderRef.current.swiper.slidePrev();
+  // const onButtonNextClick = () => sliderRef.current.swiper.slideNext();
 
   return (
     <BannerBox>
-      <Swiper
+      {children}
+      {/* <Swiper
         spaceBetween={16}
         loop
         pagination
@@ -43,7 +38,7 @@ export const Banner: FunctionComponent<BannerProps> = ({ children }) => {
         >
           <ArrowRightIcon />
         </ButtonNavigation>
-      </ButtonBox>
+      </ButtonBox> */}
     </BannerBox>
   );
 };

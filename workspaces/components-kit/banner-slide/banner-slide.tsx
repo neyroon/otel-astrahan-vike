@@ -5,18 +5,28 @@ import {
   BottomText,
   Description,
   GradientBox,
-  StyledImage,
+  StyledVideo,
   TopText,
 } from "./banner-slide.style";
 import { BannerSlideProps } from "./types";
 
 export const BannerSlide: FunctionComponent<BannerSlideProps> = ({
-  imageLink1x,
-  imageLink2x,
+  videoSrcMP4,
+  poster,
 }) => {
   return (
     <BannerSlideBox>
-      <StyledImage sources={[imageLink1x, imageLink2x]} loading="eager" />
+      <StyledVideo
+        autoPlay
+        muted
+        loop
+        playsInline
+        poster={poster}
+        width={1280}
+        height={720}
+      >
+        <source src={videoSrcMP4} type="video/mp4" />
+      </StyledVideo>
       <GradientBox />
       <TopText size="20" color="white">
         Бары, рестораны, бани
