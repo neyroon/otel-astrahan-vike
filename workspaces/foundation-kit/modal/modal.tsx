@@ -1,5 +1,6 @@
 import { useIsMobile, useMountTransition, useOnClickOutside } from "@hooks";
 import { FunctionalComponent } from "preact";
+import { createPortal } from "preact/compat";
 import { useEffect, useRef } from "preact/hooks";
 import { CloseIcon } from "../icons/close";
 import { Backdrop, Content, IconBox, ModalBox } from "./modal.styles";
@@ -28,23 +29,28 @@ export const Modal: FunctionalComponent<Modal> = ({
     if (isOpen) document.body.style.overflow = "hidden";
   }, [isOpen]);
 
-  return (
-    <ModalBox style={{ visibility: isOpen ? "visible" : "hidden" }}>
-      <Backdrop />
-      <Content
-        style={
-          hasTransitionedIn && {
-            transform: isMobile && "translateY(0)",
-            opacity: !isMobile && 1,
+  if (typeof document !== "undefined") {
+    return createPortal(
+      <ModalBox style={{ visibility: isOpen ? "visible" : "hidden" }}>
+        <Backdrop />
+        <Content
+          style={
+            hasTransitionedIn && {
+              transform: isMobile && "translateY(0)",
+              opacity: !isMobile && 1,
+            }
           }
-        }
-        ref={contentRef}
-      >
-        {children}
-        <IconBox onClick={handleModalClose}>
-          <CloseIcon />
-        </IconBox>
-      </Content>
-    </ModalBox>
-  );
+          ref={contentRef}
+        >
+          {children}
+          <IconBox onClick={handleModalClose}>
+            <CloseIcon />
+          </IconBox>
+        </Content>
+      </ModalBox>,
+      document.body
+    );
+  }
+
+  return null;
 };
