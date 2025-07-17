@@ -96,13 +96,27 @@ export const SlideVideo = styled.video`
   }
 `;
 
-export const ButtonBox = styled.div`
+export const ButtonBoxRight = styled.div`
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  z-index: 1;
+
+  @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
+    left: 16px;
+    right: 16px;
+  }
+`;
+
+export const ButtonBoxLeft = styled.div`
   display: flex;
   justify-content: space-between;
   position: absolute;
   top: 50%;
   left: 30px;
-  right: 30px;
   transform: translateY(-50%);
   z-index: 1;
 

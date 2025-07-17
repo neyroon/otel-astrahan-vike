@@ -7,7 +7,8 @@ import "swiper/css/thumbs";
 import { Thumbs } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
-  ButtonBox,
+  ButtonBoxLeft,
+  ButtonBoxRight,
   CardModalBox,
   ContentBox,
   SlideImage,
@@ -121,20 +122,22 @@ export const CardModalRooms: FunctionalComponent<CardModal> = ({
               );
             })}
           </Swiper>
-          <ButtonBox>
+          <ButtonBoxLeft>
             <ButtonNavigation
               aria-label="Навигация влево"
               onClick={onButtonPrevClick}
             >
               <ArrowLeftIcon />
             </ButtonNavigation>
+          </ButtonBoxLeft>
+          <ButtonBoxRight>
             <ButtonNavigation
               aria-label="Навигация вправо"
               onClick={onButtonNextClick}
             >
               <ArrowRightIcon />
             </ButtonNavigation>
-          </ButtonBox>
+          </ButtonBoxRight>
         </SwiperSlider>
       </SwiperBox>
       <ContentBox>{children}</ContentBox>
