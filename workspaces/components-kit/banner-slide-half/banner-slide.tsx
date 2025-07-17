@@ -6,11 +6,12 @@ export const BannerSlideHalf: FunctionComponent<BannerSlideProps> = ({
   imageLink1x,
   imageLink2x,
   videoLink,
+  videoLinkPoster,
 }) => {
   if (videoLink) {
     return (
       <BannerSlideBox>
-        <StyledVideo controls>
+        <StyledVideo controls poster={videoLinkPoster}>
           <source src={videoLink} type="video/mp4" />
         </StyledVideo>
       </BannerSlideBox>

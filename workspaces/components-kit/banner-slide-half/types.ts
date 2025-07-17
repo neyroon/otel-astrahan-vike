@@ -2,4 +2,5 @@ export interface BannerSlideProps {
   imageLink1x?: string;
   imageLink2x?: string;
   videoLink?: string;
+  videoLinkPoster?: string;
 }
