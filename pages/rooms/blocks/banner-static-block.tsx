@@ -9,7 +9,7 @@ export const BannerStaticBlock = () => {
         imageLink1x={bannerStaticImage}
         imageLink2x={bannerStaticImage}
         title="Скидка 15% при проживании в плавучем доме "
-        description="Проведите больше времени на природе и с близкими вдали от суеты города."
+        description="Проведите больше времени на природе и с близкими вдали от суеты города в домиках на берегу Волги."
       />
     </Section>
   );

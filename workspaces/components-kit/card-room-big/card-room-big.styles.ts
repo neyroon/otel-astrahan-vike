@@ -5,6 +5,7 @@ import { allColors, breakpoints } from "@tokens";
 export const CardRoomBigBox = styled.div`
   border-radius: 28px;
   background-color: ${allColors.WHITE};
+  height: 100%;
 `;
 
 export const StyledImage = styled(Image)`
@@ -22,6 +23,7 @@ export const Content = styled.div`
   flex-direction: column;
   padding: 20px 16px;
   gap: 16px;
+  height: calc(100% - 400px);
 
   @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
     padding: 32px;
@@ -43,6 +45,7 @@ export const InfoLayout = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  margin-top: auto;
 `;
 
 export const InfoBox = styled.div`

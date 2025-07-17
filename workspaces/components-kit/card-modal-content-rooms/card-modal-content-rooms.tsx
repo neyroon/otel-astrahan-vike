@@ -11,7 +11,7 @@ import {
   TopTextBox,
 } from "./card-modal-content-rooms.styles";
 
-const listItems = [
+const defaultListItems = [
   "Собственная кухня",
   "Зона с шезлонгами",
   "Мангал",
@@ -22,11 +22,12 @@ interface CardModalContentRooms {
   title: string;
   description: string;
   price: string;
+  listItems?: string[];
 }
 
 export const CardModalContentRooms: FunctionalComponent<
   CardModalContentRooms
-> = ({ title, description, price }) => {
+> = ({ title, description, price, listItems = defaultListItems }) => {
   return (
     <Box>
       <TopTextBox>

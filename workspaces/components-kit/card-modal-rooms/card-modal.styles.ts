@@ -106,7 +106,6 @@ export const ButtonBoxRight = styled.div`
   z-index: 1;
 
   @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
-    left: 16px;
     right: 16px;
   }
 `;
@@ -122,7 +121,6 @@ export const ButtonBoxLeft = styled.div`
 
   @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
     left: 16px;
-    right: 16px;
   }
 `;
 

@@ -49,10 +49,10 @@ export const CardModalRooms: FunctionalComponent<CardModal> = ({
   ];
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const sliderRef = useRef(null);
-  const isMobile = useIsMobile();
-  const videoRef = useRef<null | HTMLVideoElement>(null);
   const onButtonPrevClick = () => sliderRef.current.swiper.slidePrev();
   const onButtonNextClick = () => sliderRef.current.swiper.slideNext();
+  const isMobile = useIsMobile();
+  const videoRef = useRef<null | HTMLVideoElement>(null);
   const slideChange = (e) => {
     if (videoRef?.current?.played) {
       videoRef?.current?.pause();
