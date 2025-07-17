@@ -102,6 +102,7 @@ export const CardModalRooms: FunctionalComponent<CardModal> = ({
                         ref={videoRef}
                         controls
                         controlsList="nodownload"
+                        playsInline
                         width={1280}
                         height={720}
                       >
