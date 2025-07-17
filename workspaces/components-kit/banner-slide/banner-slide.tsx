@@ -33,7 +33,7 @@ export const BannerSlide: FunctionComponent<BannerSlideProps> = ({
       </TopText>
       <BottomText>
         <Typography size="48" color="white">
-          Уединение с природой в домиках скандинавского типа
+          Уединение с природой в домиках на берегу Волги
         </Typography>
         <Description size="18" color="white">
           Команда River-Fish – это люди, которые проехали в путешествиях по
