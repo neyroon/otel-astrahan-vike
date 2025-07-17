@@ -2,12 +2,13 @@ import { ArrowsIcon, Modal, Typography } from "@foundation";
 import { useIsMobile } from "@hooks";
 import { FunctionalComponent } from "preact";
 import { useEffect, useRef, useState } from "preact/hooks";
+import alcoveBigImage from "./assets/alcove-image-big.webp";
+import alcoveImage from "./assets/alcove-image.webp";
 import imageBath from "./assets/bath-image.webp";
-import imageHouse from "./assets/house-image.webp";
+import imageHouseBii from "./assets/house_bii.webp";
+import imageHouseHan from "./assets/house_han.webp";
 import imageHouseboat from "./assets/houseboat-image.webp";
 import playgroundImage from "./assets/playground-image.webp";
-import alcoveImage from "./assets/alcove-image.webp";
-import alcoveBigImage from "./assets/alcove-image-big.webp";
 import imagePool from "./assets/pool-image.webp";
 import imageRestaurant from "./assets/restaurant-image.webp";
 import { CardHouse } from "./card-house";
@@ -165,7 +166,7 @@ export const PickHouse: FunctionalComponent<PickHouseProps> = ({
           <g
             data-title="Юрта-Бий"
             data-description="Дом 36 кв.м"
-            data-imagelink={imageHouse}
+            data-imagelink={imageHouseBii}
             data-ishouse="true"
             data-square="36"
           >
@@ -185,7 +186,7 @@ export const PickHouse: FunctionalComponent<PickHouseProps> = ({
           <g
             data-title="Юрта-Бий"
             data-description="Дом 36 кв.м"
-            data-imagelink={imageHouse}
+            data-imagelink={imageHouseBii}
             data-ishouse="true"
             data-square="36"
           >
@@ -205,7 +206,7 @@ export const PickHouse: FunctionalComponent<PickHouseProps> = ({
           <g
             data-title="Юрта-Бий"
             data-description="Дом 36 кв.м"
-            data-imagelink={imageHouse}
+            data-imagelink={imageHouseBii}
             data-ishouse="true"
             data-square="36"
           >
@@ -225,7 +226,7 @@ export const PickHouse: FunctionalComponent<PickHouseProps> = ({
           <g
             data-title="Юрта-Бий"
             data-description="Дом 36 кв.м"
-            data-imagelink={imageHouse}
+            data-imagelink={imageHouseBii}
             data-ishouse="true"
             data-square="36"
           >
@@ -245,7 +246,7 @@ export const PickHouse: FunctionalComponent<PickHouseProps> = ({
           <g
             data-title="Юрта-Хан"
             data-description="Дом 48 кв.м с отдельной спальней"
-            data-imagelink={imageHouse}
+            data-imagelink={imageHouseHan}
             data-ishouse="true"
             data-square="48"
           >
@@ -265,7 +266,7 @@ export const PickHouse: FunctionalComponent<PickHouseProps> = ({
           <g
             data-title="Юрта-Хан"
             data-description="Дом 48 кв.м с отдельной спальней"
-            data-imagelink={imageHouse}
+            data-imagelink={imageHouseHan}
             data-ishouse="true"
             data-square="48"
           >
@@ -285,7 +286,7 @@ export const PickHouse: FunctionalComponent<PickHouseProps> = ({
           <g
             data-title="Юрта-Хан"
             data-description="Дом 48 кв.м с отдельной спальней"
-            data-imagelink={imageHouse}
+            data-imagelink={imageHouseHan}
             data-ishouse="true"
             data-square="48"
           >
@@ -305,7 +306,7 @@ export const PickHouse: FunctionalComponent<PickHouseProps> = ({
           <g
             data-title="Юрта-Хан"
             data-description="Дом 48 кв.м с отдельной спальней"
-            data-imagelink={imageHouse}
+            data-imagelink={imageHouseHan}
             data-ishouse="true"
             data-square="48"
           >
