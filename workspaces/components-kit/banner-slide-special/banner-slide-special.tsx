@@ -28,7 +28,8 @@ export const BannerSlideSpecial: FunctionComponent<BannerSlideProps> = ({
           <LineThough size="16" color="white">
             25&nbsp;000
           </LineThough>
-          12&nbsp;500 <br />
+          12&nbsp;500
+          <br />
           Юрта-Бий:
           <LineThough size="16" color="white">
             20&nbsp;000
