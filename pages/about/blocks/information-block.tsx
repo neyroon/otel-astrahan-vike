@@ -5,10 +5,11 @@ import { BannerOnlyScrollbarSlide } from "@components/banner-slide-only-scrollba
 import { InformationBanners } from "@components/Information-banners";
 import { InformationDescription } from "@components/information-description";
 import { Section } from "@components/section";
+import BannerHalfVideo from "../../index/assets/1.mp4";
 import BannerOnlySidebarImage4 from "../../index/assets/card-about-2.webp";
 import BannerOnlySidebarImage3 from "../assets/attendance-image-5.webp";
-import BannerHalfImage1 from "../assets/banner-half-1.webp";
 import BannerHalfImage2 from "../assets/banner-half-2.webp";
+import BannerHalfImage3 from "../assets/banner-half-3.webp";
 import BannerOnlySidebarImage1 from "../assets/banner-only-scrollbar-image-1.webp";
 import BannerOnlySidebarImage2 from "../assets/banner-only-scrollbar-image-2.webp";
 
@@ -17,13 +18,14 @@ export const InformationBlock = () => {
     <Section backgroundColor="dark-gray" align="center" doublePaddingTop>
       <InformationBanners>
         <BannerHalf>
-          <BannerSlideHalf
-            imageLink1x={BannerHalfImage1}
-            imageLink2x={BannerHalfImage1}
-          />
+          <BannerSlideHalf videoLink={BannerHalfVideo} />
           <BannerSlideHalf
             imageLink1x={BannerHalfImage2}
             imageLink2x={BannerHalfImage2}
+          />
+          <BannerSlideHalf
+            imageLink1x={BannerHalfImage3}
+            imageLink2x={BannerHalfImage3}
           />
         </BannerHalf>
         <InformationDescription

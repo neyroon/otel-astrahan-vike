@@ -14,9 +14,20 @@ export const BannerHalf: FunctionComponent<BannerProps> = ({ children }) => {
   const onButtonPrevClick = () => sliderRef.current.swiper.slidePrev();
   const onButtonNextClick = () => sliderRef.current.swiper.slideNext();
 
+  const slideChange = (e) => {
+    const video = e.el.querySelector("video");
+    if (video) video.pause();
+  };
+
   return (
     <BannerBox>
-      <Swiper spaceBetween={16} speed={700} loop ref={sliderRef}>
+      <Swiper
+        spaceBetween={16}
+        speed={700}
+        loop
+        ref={sliderRef}
+        onSlideChange={slideChange}
+      >
         {elements.map((el) => (
           <SwiperSlide>{el}</SwiperSlide>
         ))}

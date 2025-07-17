@@ -21,3 +21,11 @@ export const StyledImage = styled(Image)`
     border-radius: 28px;
   }
 `;
+
+export const StyledVideo = styled.video`
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+  border-radius: 28px;
+`;
