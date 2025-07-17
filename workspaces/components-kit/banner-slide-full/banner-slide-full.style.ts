@@ -7,12 +7,14 @@ export const BannerSlideBox = styled.div`
   display: flex;
   position: relative;
   flex-direction: column;
-  justify-content: space-between;
+
   border-radius: 28px;
+  height: 100%;
   border: 1px solid ${allColors.COLUMBIA_BLUE};
 
   @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
     height: 660px;
+    justify-content: space-between;
     border: none;
   }
 `;
@@ -25,13 +27,13 @@ export const StyledTypography = styled(Typography)`
 export const StyledImage = styled(Image)`
   height: 100%;
   width: 100%;
-  min-height: 250px;
+  height: 250px;
 
   & img {
     border-radius: 28px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    min-height: 250px;
+    height: 250px;
   }
 
   @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
@@ -87,6 +89,7 @@ export const FeaturesBox = styled.div`
   display: flex;
   align-items: center;
   gap: 16px;
+  margin-top: auto;
 `;
 
 export const CardBox = styled.div`
@@ -95,9 +98,11 @@ export const CardBox = styled.div`
   padding: 14px;
   display: flex;
   flex-direction: column;
+  height: calc(100% - 250px);
 
   @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
     width: 548px;
+    height: auto;
     padding: 26px;
     position: absolute;
     left: 40px;

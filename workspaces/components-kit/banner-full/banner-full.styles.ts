@@ -15,6 +15,10 @@ export const BannerFullBox = styled.div`
     padding: 0;
   }
 
+  & .swiper-slide {
+    height: auto;
+  }
+
   & .swiper {
     position: static;
     border-radius: 28px;
