@@ -1,8 +1,7 @@
 import { BannerSlideSpecial } from "@components/banner-slide-special";
 import { BannerSpecial } from "@components/banner-special";
 import { Section } from "@components/section";
-import houseSpecial2 from "../../rooms/assets/card-rooms-big-1.webp";
-import houseSpecial1 from "../assets/house-special.webp";
+import houseSpecial2 from "../../rooms/assets/IMG_7043.webp";
 
 export const SpecialBlock = () => {
   return (

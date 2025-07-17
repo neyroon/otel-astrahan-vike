@@ -24,16 +24,16 @@ export const BannerSlideSpecial: FunctionComponent<BannerSlideProps> = ({
           Выгода 50% для первых гостей
         </Typography>
         <Description size="20" color="white">
-          В рамках технического открытия приглашаем провести выходные на природе
-          по специальной цене:
+          Юрта-Хан:
           <LineThough size="16" color="white">
             25&nbsp;000
           </LineThough>
-          12&nbsp;500 за Юрту-Хан и
+          12&nbsp;500 <br />
+          Юрта-Бий:
           <LineThough size="16" color="white">
             20&nbsp;000
           </LineThough>
-          10&nbsp;000 за Юрту-Бий
+          10&nbsp;000
         </Description>
         <StyledButton size="m">Забронировать номер</StyledButton>
       </BottomText>
