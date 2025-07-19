@@ -54,7 +54,9 @@ export const CardModalContentFish = () => {
         </List>
       </ListBlock>
 
-      <StyledButton size="s">Связаться с администратором</StyledButton>
+      <StyledButton size="s" href="tel:+79208953030">
+        Связаться с администратором
+      </StyledButton>
     </Box>
   );
 };
