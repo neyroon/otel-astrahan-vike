@@ -37,9 +37,9 @@ export const StyledImage = styled(Image)`
   }
 
   @media only screen and (min-width: ${breakpoints.DESKTOP_S}px) {
-    height: auto;
+    height: 100%;
     & img {
-      height: auto;
+      height: 100%;
       border-bottom-left-radius: 28px;
       border-bottom-right-radius: 28px;
     }
