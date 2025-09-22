@@ -51,11 +51,19 @@ export const CardReview: FunctionalComponent<CardReviewProps> = ({
           <StarIcon />
         </StarBlock>
       </ReviewBlock>
-      <PhotoBlock>
-        <StyledImage sources={[firstImageLink, firstImageLink]} />
-        <StyledImage sources={[secondImageLink, secondImageLink]} />
-        <StyledImage sources={[thirdImageLink, thirdImageLink]} />
-      </PhotoBlock>
+      {(firstImageLink || secondImageLink || thirdImageLink) && (
+        <PhotoBlock>
+          {firstImageLink && (
+            <StyledImage sources={[firstImageLink, firstImageLink]} />
+          )}
+          {secondImageLink && (
+            <StyledImage sources={[secondImageLink, secondImageLink]} />
+          )}
+          {thirdImageLink && (
+            <StyledImage sources={[thirdImageLink, thirdImageLink]} />
+          )}
+        </PhotoBlock>
+      )}
       <Review size="16" opacity={60}>
         {review}
       </Review>

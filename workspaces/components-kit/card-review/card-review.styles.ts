@@ -53,7 +53,7 @@ export const PhotoBlock = styled.div`
 export const StyledImage = styled(Image)`
   width: 100%;
   height: 16vw;
-
+  width: calc(33% - 6px);
   img {
     border-radius: 8px;
   }
