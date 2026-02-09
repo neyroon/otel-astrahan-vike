@@ -5,6 +5,7 @@ import vike from "vike/plugin";
 import { UserConfig } from "vite";
 
 const config: UserConfig = {
+  base: process.env.BASE_PATH ?? "/",
   plugins: [
     preact(),
     vike({ prerender: true }),
