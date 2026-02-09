@@ -1,4 +1,4 @@
-import { Link, Typography } from "@foundation";
+import { Link, Typography, withBase } from "@foundation";
 import { FunctionComponent } from "preact";
 import { useEffect, useState } from "preact/hooks";
 import {
@@ -85,7 +85,7 @@ export const Header: FunctionComponent = () => {
               </NavigationListItem>
             </NavigationList>
           </NavigationContainer>
-          <LogotypeLink href="/" aria-label="Логотип">
+          <LogotypeLink href={withBase("/")} aria-label="Логотип">
             <Logotype />
           </LogotypeLink>
           <Contacts>

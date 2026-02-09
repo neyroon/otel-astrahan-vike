@@ -1,4 +1,5 @@
 import { FunctionComponent } from "preact";
+import { withBase } from "../link";
 import { Typography } from "../typography";
 import { ButtonBox, LinkBox } from "./button.styles";
 import { ButtonSize } from "./types";
@@ -26,7 +27,7 @@ export const Button: FunctionComponent<ButtonProps> = ({
         className={className}
         $size={size}
         $design={design}
-        href={href}
+        href={withBase(href)}
         {...rest}
       >
         <Typography size="15" color="inherit">
